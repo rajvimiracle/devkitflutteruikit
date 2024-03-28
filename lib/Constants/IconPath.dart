@@ -11,5 +11,7 @@ class IconPath{
   static const productlist = "assets/icons/icon_productlist.png";
   static const timeline = "assets/icons/icon_timeline.png";
   static const notification = "assets/icons/icon_notification.png";
+  static const leaf = "assets/icons/icon_leaf.png";
+  static const leaf1 = "assets/icons/icon_leaf1.png";
 
 }
