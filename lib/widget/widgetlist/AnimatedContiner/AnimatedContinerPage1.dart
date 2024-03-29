@@ -105,7 +105,7 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () => onTap!(),
       style: ButtonStyle(
-        fixedSize: MaterialStateProperty.all(size ?? (Size(35.w, 4.h)),),
+        fixedSize: MaterialStateProperty.all(size ?? (Size(38.w, 4.h)),),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(radius ?? 5),

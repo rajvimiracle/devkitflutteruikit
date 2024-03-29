@@ -9,7 +9,20 @@ class WidgetsListPage extends StatelessWidget {
   String title;
   WidgetsListPage({super.key,this.title = 'Animated'});
 
-  List stepperList = ["Absorb Pointer","Align Widget","Animated Align","Animated Container","Animated Cross Fade","Animated Default TextStyle"];
+  List stepperList = [
+    "Absorb Pointer",
+    "Align Widget",
+    "Animated Align",
+    "Animated Container",
+    "Animated Cross Fade",
+    "Animated Default TextStyle",
+    "Animated Physical Model",
+    "Animated Positioned",
+    "App Bar",
+    "Bottom Sheet",
+    "ClipRRect Widget",
+    "Container Widget",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +66,24 @@ class WidgetsListPage extends StatelessWidget {
                           case 5:
                             Get.toNamed(Routes.animateddefaulttext);
                             break;
-
+                          case 6:
+                            Get.toNamed(Routes.animatedphysicalmodel);
+                            break;
+                          case 7:
+                            Get.toNamed(Routes.animatedpositioned);
+                            break;
+                          case 8:
+                            Get.toNamed(Routes.appbarpage);
+                            break;
+                          case 9:
+                            Get.toNamed(Routes.bottomsheetlist);
+                            break;
+                          case 10:
+                            Get.toNamed(Routes.clipRRectpage);
+                            break;
+                          case 11:
+                            Get.toNamed(Routes.containerlist);
+                            break;
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,

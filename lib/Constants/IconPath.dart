@@ -13,5 +13,6 @@ class IconPath{
   static const notification = "assets/icons/icon_notification.png";
   static const leaf = "assets/icons/icon_leaf.png";
   static const leaf1 = "assets/icons/icon_leaf1.png";
+  static const  curlybracket = "assets/icons/icon_curlybracket.png";
 
 }

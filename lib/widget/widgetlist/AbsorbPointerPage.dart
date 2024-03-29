@@ -57,13 +57,10 @@ class _AbsorbPointerPageState extends State<AbsorbPointerPage> {
                       ),
                     ),
                   ),
-
-
                 ],
               ),
             )
           ],
-
         ),
       ),
     );
