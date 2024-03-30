@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+import '../../../../Constants/ImagePath.dart';
 
 class ColoringContainerPage extends StatefulWidget {
   const ColoringContainerPage({super.key});
@@ -12,6 +12,14 @@ class ColoringContainerPage extends StatefulWidget {
 }
 
 class _ColoringContainerPageState extends State<ColoringContainerPage> {
+List<Coloringcontainer> coloringcontainer = [
+   Coloringcontainer(color: Colors.pink),
+   Coloringcontainer(color: Colors.blue),
+   Coloringcontainer(color: Colors.green),
+   Coloringcontainer(color: Colors.purpleAccent),
+   Coloringcontainer(color: Colors.redAccent),
+   Coloringcontainer(color: Colors.lightGreen),
+];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,6 +42,23 @@ class _ColoringContainerPageState extends State<ColoringContainerPage> {
                   SizedBox(height: 2.h,),
                   Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
                   SizedBox(height: 1.h,),
+                  ListView.separated(
+                    shrinkWrap: true,
+                    itemCount: coloringcontainer.length,
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+                             Container(
+                               height: 5.h,
+                               width: double.infinity,
+                               color: coloringcontainer[index].color,
+                             ),
+                          ],
+                        );
+                      }, separatorBuilder: (BuildContext context, int index) {
+                      return SizedBox(height: 2.h,);
+                  },
+                     )
               ],),
             ),
           ],
@@ -41,4 +66,14 @@ class _ColoringContainerPageState extends State<ColoringContainerPage> {
       ),
     );
   }
+}
+
+class Coloringcontainer{
+  Color color;
+
+  Coloringcontainer({
+  required this.color,
+});
+
+
 }

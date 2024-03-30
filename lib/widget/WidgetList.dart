@@ -22,6 +22,13 @@ class WidgetsListPage extends StatelessWidget {
     "Bottom Sheet",
     "ClipRRect Widget",
     "Container Widget",
+    "Divider Widget",
+    "Expanded",
+    "Fade Transition",
+    "Flexible Widget",
+    "Gesture Detector Widget",
+    "Ignore Pointer",
+    "Image Widget",
   ];
 
   @override
@@ -84,7 +91,28 @@ class WidgetsListPage extends StatelessWidget {
                           case 11:
                             Get.toNamed(Routes.containerlist);
                             break;
-                        }
+                          case 12:
+                            Get.toNamed(Routes.dividerwidgetlist);
+                            break;
+                          case 13:
+                            Get.toNamed(Routes.expandedpage);
+                            break;
+                          case 14:
+                               Get.toNamed(Routes.fadetransitionpage);
+                               break;
+                          case 15:
+                            Get.toNamed(Routes.flexibalepage);
+                            break;
+                          case 16:
+                            Get.toNamed(Routes.gesturedetectorpage);
+                            break;
+                          case 17:
+                            Get.toNamed(Routes.ignorepointerpage);
+                            break;
+                          case 18:
+                            Get.toNamed(Routes.imagewidgetpage);
+                            break;
+                              }
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(

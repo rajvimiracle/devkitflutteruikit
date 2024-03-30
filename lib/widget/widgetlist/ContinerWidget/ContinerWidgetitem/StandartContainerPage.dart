@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+import '../../../../Constants/ImagePath.dart';
 
 class StandartContainerPage extends StatefulWidget {
   const StandartContainerPage({super.key});

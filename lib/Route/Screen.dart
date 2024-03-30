@@ -13,6 +13,9 @@ import 'package:devkitflutteruikit/Screen/ScreenList/TimeLinePage.dart';
 import 'package:devkitflutteruikit/Screen/ScreenList/UserPage.dart';
 import 'package:devkitflutteruikit/Screen/ScreenList/UserProfilePage.dart';
 import 'package:devkitflutteruikit/Screen/ScreenList/VerificationPage.dart';
+import 'package:devkitflutteruikit/widget/GestureDetectorWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/IgnorePointerWidget.dart';
+import 'package:devkitflutteruikit/widget/ImageWidget.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AlignWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedContiner/AnimatedContinerPage1.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedCrossFadePage.dart';
@@ -27,16 +30,24 @@ import 'package:devkitflutteruikit/widget/widgetlist/AppBar/AppBarPage4.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetList.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage1.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage2.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ClipRReactWidget.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/BorderContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/BorderRadiusContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ColoringContinerPage.dart';
+import 'package:devkitflutteruikit/widget/ClipRReactWidget.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderRadiusContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ColoringContinerPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetList.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/GradientColorContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/MarginOnContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/PaddingOnContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ShadowContainerPage.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/StandartContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/GradientColorContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/MarginOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/PaddingOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ShadowContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/StandartContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetitem/HorizontalDividerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetitem/VerticalDividerPage.dart';
+import 'package:devkitflutteruikit/widget/ExpandedWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/FadeTransitionPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleColumnPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleRowPage.dart';
 
 import 'package:get/get.dart';
 
@@ -101,5 +112,23 @@ class  Screens{
     GetPage(name: Routes.bordercontiner, page: () => BorderContainerPage()),
     GetPage(name: Routes.borderradiuscontiner, page: () => BorderRadiusContainerPage()),
     GetPage(name: Routes.shadowcontiner, page: () => ShadowContainerPage()),
+
+    GetPage(name: Routes.dividerwidgetlist, page: () => DividerWidgetList()),
+    GetPage(name: Routes.horizontaldivider, page: () => HorizontalDividerPage()),
+    GetPage(name: Routes.verticaldivider, page: () => VerticalDividerPage()),
+
+    GetPage(name: Routes.expandedpage, page: () => ExpandedWidgetPage()),
+
+    GetPage(name: Routes.fadetransitionpage, page: () => FadeTransitionPage()),
+
+    GetPage(name: Routes.flexibalepage, page: () => FlexibleWidgetList()),
+    GetPage(name: Routes.flexibalerow, page: () => FlexibleRowPage()),
+    GetPage(name: Routes.flexibalecolumn, page: () => FlexibleColumnPage()),
+
+    GetPage(name: Routes.gesturedetectorpage, page: () => GestureDetectorWidgetPage()),
+
+    GetPage(name: Routes.ignorepointerpage, page: () => IgnorePointerPage()),
+
+    GetPage(name: Routes.imagewidgetpage, page: () => ImageWidgetPage()),
   ];
 }

@@ -53,5 +53,27 @@ class Routes{
   static const borderradiuscontiner = '/borderradiuscontiner';
   static const shadowcontiner = '/shadowcontiner';
 
+  static const dividerwidgetlist = '/dividerwidgetlist';
+  static const horizontaldivider = '/horizontaldivider';
+  static const verticaldivider = '/verticaldivider';
+
+  static const expandedpage = '/expandedpage';
+
+  static const fadetransitionpage = '/fadetransitionpage';
+
+  static const flexibalepage = '/flexibalepage';
+  static const flexibalerow = '/flexibalerow';
+  static const flexibalecolumn = '/flexibalecolumn';
+
+  static const gesturedetectorpage = '/gesturedetectorpage';
+
+  static const ignorepointerpage = '/ignorepointerpage';
+
+  static const imagewidgetpage = '/imagewidgetpage';
+
+
+
+
+
 
 }

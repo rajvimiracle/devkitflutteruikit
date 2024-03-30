@@ -5,25 +5,16 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../../../Route/Routes.dart';
 
-class ContainerWidgetList extends StatefulWidget {
+class FlexibleWidgetList extends StatefulWidget {
   String title;
-  ContainerWidgetList({super.key,this.title = 'App Bar'});
+  FlexibleWidgetList({super.key,this.title = 'Flexible Widget'});
 
   @override
-  State<ContainerWidgetList> createState() => _ContainerWidgetListState();
+  State<FlexibleWidgetList> createState() => _FlexibleWidgetListState();
 }
 
-class _ContainerWidgetListState extends State<ContainerWidgetList> {
-  List continerwidgetlist = [
-    "Standart Container ",
-    "Coloring Container",
-    "Gradient Color Container",
-    "Margin On Container",
-    "Padding On Container",
-    "Border Container",
-    "Border Radius Container",
-    "Shadow Container",
-  ];
+class _FlexibleWidgetListState extends State<FlexibleWidgetList> {
+  List stepperList = ["Flexible Row ","Flexible Column",];
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +33,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
-                itemCount: continerwidgetlist.length,shrinkWrap: true,
+                itemCount: stepperList.length,shrinkWrap: true,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding:  EdgeInsets.all(2.w),
@@ -50,30 +41,11 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartcontiner);
+                            Get.toNamed(Routes.flexibalerow);
                             break;
                           case 1:
-                            Get.toNamed(Routes.coloringcontiner);
+                            Get.toNamed(Routes.flexibalecolumn);
                             break;
-                          case 2:
-                            Get.toNamed(Routes.gradientcolorcontiner);
-                            break;
-                          case 3:
-                            Get.toNamed(Routes.margincontiner);
-                            break;
-                          case 4:
-                            Get.toNamed(Routes.paddingcontiner);
-                            break;
-                          case 5:
-                            Get.toNamed(Routes.bordercontiner);
-                            break;
-                          case 6:
-                            Get.toNamed(Routes.borderradiuscontiner);
-                            break;
-                          case 7:
-                            Get.toNamed(Routes.shadowcontiner);
-                            break;
-
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
@@ -83,7 +55,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
                         ),
                         child: Center(
                           child: Text(
-                            continerwidgetlist[index],
+                            stepperList[index],
                             style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),
                           ),
                         ),
