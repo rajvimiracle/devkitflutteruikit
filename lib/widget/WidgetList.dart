@@ -24,10 +24,8 @@ import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidg
 import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/AlignmentWrapPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListPage.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
 import 'IgnorePointerWidget.dart';
 
 class WidgetsListPage extends StatelessWidget {

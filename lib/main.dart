@@ -1,5 +1,6 @@
 
 import 'package:devkitflutteruikit/widget/WidgetList.dart';
+import 'package:devkitflutteruikit/widget/WidgetPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
             textTheme:Theme.of(context).textTheme,
             fontFamily: "PlusJakartaSans",
           ),
-         home: WidgetsListPage(),
+         home: WidgetPage(),
       /*    getPages:Screens.routes,
           initialRoute: Routes.widgetlist,*/
         );
