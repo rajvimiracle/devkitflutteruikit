@@ -1,10 +1,9 @@
-import 'package:devkitflutteruikit/Screen/ScreenList.dart';
+
+import 'package:devkitflutteruikit/widget/WidgetList.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import 'Route/Routes.dart';
-import 'Route/Screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,10 +22,10 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primaryColorDark:Colors.white,
-            primaryColor: Color(0x85E98929),
-            secondaryHeaderColor: Color(0xffE98929),
-            shadowColor : Color(0x95E98929),
-            primaryColorLight: Color(0x97E98929),
+            primaryColor: Color(0xff21A179),
+            secondaryHeaderColor: Color(0xff21A179),
+            shadowColor : Color(0xff21A179),
+            primaryColorLight: Color(0xff21A179),
             bottomAppBarColor: Colors.black,
             cardColor: Colors.grey,
             dividerColor: Colors.red,
@@ -46,9 +45,9 @@ class MyApp extends StatelessWidget {
             textTheme:Theme.of(context).textTheme,
             fontFamily: "PlusJakartaSans",
           ),
-     /*    home: ScreenListPage(),*/
-          getPages:Screens.routes,
-          initialRoute: Routes.widgetlist,
+         home: WidgetsListPage(),
+      /*    getPages:Screens.routes,
+          initialRoute: Routes.widgetlist,*/
         );
       },
     );

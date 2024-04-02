@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+
 
 class RotateTransfromPage extends StatefulWidget {
   const RotateTransfromPage({super.key});
@@ -27,7 +27,7 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
       body: Container(
         child: Stack(
           children: [
-          Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+          Image.asset("assets/images/img_bgImage.png",fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
           child: SingleChildScrollView(
             child: Column(
@@ -91,8 +91,6 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
                     ),
                   ),
                 ),
-
-
               ],
             ),
           ),

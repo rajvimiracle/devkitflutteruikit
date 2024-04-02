@@ -1,4 +1,4 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -24,8 +24,8 @@ class _AppBarPage1State extends State<AppBarPage1> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
-           Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+            Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
              child: Column(
                crossAxisAlignment: CrossAxisAlignment.start,
                children: [

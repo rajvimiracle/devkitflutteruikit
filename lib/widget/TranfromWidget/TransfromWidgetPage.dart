@@ -1,9 +1,12 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/ScaleTransfromPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
+import 'TransfromWidgetItem/RotateTransfromPage.dart';
+import 'TransfromWidgetItem/SkewTransfromPage.dart';
+import 'TransfromWidgetItem/TranslateTransfromPage.dart';
 
 class TransformWidgetPage extends StatefulWidget {
   String title;
@@ -29,7 +32,7 @@ class _TransformWidgetPageState extends State<TransformWidgetPage> {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/img_bgImage.png"),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -41,23 +44,23 @@ class _TransformWidgetPageState extends State<TransformWidgetPage> {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.rotatetrapage);
+                         Get.to(RotateTransfromPage());
                             break;
                           case 1:
-                            Get.toNamed(Routes.scaletrapage);
+                            Get.to(ScaleTransfromPage());
                             break;
                           case 2:
-                            Get.toNamed(Routes.translatetrapage);
+                            Get.to(TranslateTransfromPage());
                             break;
                           case 3:
-                            Get.toNamed(Routes.skewtrapage);
+                       Get.to(SkewTransfromPage());
                             break;
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

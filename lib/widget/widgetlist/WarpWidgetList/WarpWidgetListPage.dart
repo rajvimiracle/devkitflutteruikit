@@ -1,9 +1,14 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
+
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/AlignmentWrapPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/SpacingWarpPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/WarpDirectionPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
+import 'WarpWidgetListItem/StandartWarpPage.dart';
 
 class WarpWidgetListPage extends StatefulWidget {
   String title;
@@ -29,7 +34,7 @@ class _WarpWidgetListPageState extends State<WarpWidgetListPage> {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/img_bgImage.png"),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -41,16 +46,16 @@ class _WarpWidgetListPageState extends State<WarpWidgetListPage> {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartpage);
+                           Get.to(StandartWarpPage());
                             break;
                           case 1:
-                            Get.toNamed(Routes.warpdirectionpage);
+                            Get.to(WarpDirectionPage());
                             break;
                           case 2:
-                            Get.toNamed(Routes.spacingpage);
+                            Get.to(SpacingWarpPage());
                             break;
                           case 3:
-                            Get.toNamed(Routes.alignmentpage);
+                            Get.to(AlignmentWrapPage());
                             break;
 
                         }
@@ -58,7 +63,7 @@ class _WarpWidgetListPageState extends State<WarpWidgetListPage> {
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage("assets/images/img_con.png",), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

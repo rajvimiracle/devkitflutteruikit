@@ -1,9 +1,9 @@
+/*
 import 'package:devkitflutteruikit/Constants/IconPath.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Route/Routes.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});
@@ -111,4 +111,4 @@ class OnBoardingData {
     required this.title,
     required this.color,
   });
-}
+}*/

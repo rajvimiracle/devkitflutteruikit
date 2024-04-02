@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../Constants/ImagePath.dart';
+
 
 class BottomSheetPage3 extends StatefulWidget {
   const BottomSheetPage3({super.key});
@@ -25,7 +25,7 @@ class _BottomSheetPage3State extends State<BottomSheetPage3> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.w,left: 5.w,right: 5.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

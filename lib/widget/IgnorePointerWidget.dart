@@ -1,10 +1,10 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../Constants/ImagePath.dart';
+
 
 class IgnorePointerPage extends StatefulWidget {
   const IgnorePointerPage({super.key});
@@ -28,7 +28,7 @@ class _IgnorePointerPageState extends State<IgnorePointerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 6.w,right: 6.w,bottom: 4.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

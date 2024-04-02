@@ -1,5 +1,4 @@
-import 'package:devkitflutteruikit/Constants/IconPath.dart';
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -25,7 +24,7 @@ class _AppBarPage4State extends State<AppBarPage4> {
       body: Container(
         child: Stack(
           children: [
-          Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+          Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +56,7 @@ class _AppBarPage4State extends State<AppBarPage4> {
                       padding:  EdgeInsets.only(left: 20.w),
                       child: Row(
                         children: [
-                          Image.asset(IconPath.curlybracket),
+                          Image.asset("assets/icons/icon_curlybracket.png"),
                           SizedBox(width: 3.w,),
                           Text("Miracle Kit",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp,color: Colors.black,letterSpacing: 1),),
                         ],

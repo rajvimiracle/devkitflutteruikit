@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../../Constants/ImagePath.dart';
+
 
 class HorizontalDividerPage extends StatefulWidget {
   const HorizontalDividerPage({super.key});
@@ -25,13 +25,13 @@ class _HorizontalDividerPageState extends State<HorizontalDividerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
-        Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+
+            Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("Horizontal Divider",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-
               Text("This is the example of Horizontal Divider",style: TextStyle(color: Colors.black54),),
               SizedBox(height: 2.h,),
               Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),

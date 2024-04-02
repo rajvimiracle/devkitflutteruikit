@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
+
 
 class AnimatedAlignPage extends StatefulWidget {
   const AnimatedAlignPage({super.key});
@@ -26,7 +26,7 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
         padding: EdgeInsets.only(top: 5.h,right: 7.w,left: 7.w),
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
 
             Wrap(
               runSpacing: 19,
@@ -121,7 +121,7 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
                 child: AnimatedAlign(
                   duration: Duration(seconds: 1),
                   alignment: _alignment,
-                  child: Image.asset(ImagePath.flutter,height: 5.h,),
+                  child: Image.asset("assets/images/img_Flutter.png",height: 5.h,),
                 ),
               ),
             ),

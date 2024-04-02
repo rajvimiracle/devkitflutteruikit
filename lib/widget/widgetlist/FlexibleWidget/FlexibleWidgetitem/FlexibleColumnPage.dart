@@ -1,4 +1,3 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +24,8 @@ class _FlexibleColumnPageState extends State<FlexibleColumnPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+
             Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

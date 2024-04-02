@@ -1,4 +1,3 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -23,7 +22,7 @@ class _PaddingOnContainerPageState extends State<PaddingOnContainerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.h,left: 5.w,right: 5.w,bottom: 4.h ),
               child: SingleChildScrollView(
                 child: Column(

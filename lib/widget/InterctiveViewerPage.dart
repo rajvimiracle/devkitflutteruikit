@@ -1,4 +1,4 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -24,7 +24,7 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.w,left: 5.w,right: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +35,7 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
               SizedBox(height: 2.h,),
               Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
               SizedBox(height: 1.h,),
-              InteractiveViewer(child: Image.asset(ImagePath.clip,height: 30.h,),
+              InteractiveViewer(child: Image.asset('assets/images/img_clip1.png',height: 30.h,),
                maxScale: 5,
               ),
             ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
+
 
 class AnimatedPhysicalModelPage extends StatefulWidget {
   const AnimatedPhysicalModelPage({super.key});
@@ -25,7 +25,7 @@ class _AnimatedPhysicalModelPageState extends State<AnimatedPhysicalModelPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 10.h,right: 5.w,left: 7.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,7 +42,7 @@ class _AnimatedPhysicalModelPageState extends State<AnimatedPhysicalModelPage> {
                      child:  Container(
                        height: 20.h,
                        width: 35.w,
-                       child: Image.asset(ImagePath.flutter,height: 5.h,width: 5.w,scale: 1,),
+                       child: Image.asset("assets/images/img_Flutter.png",height: 5.h,width: 5.w,scale: 1,),
 
                      ),
                      shape: BoxShape.rectangle,

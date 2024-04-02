@@ -1,13 +1,15 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetitem/HorizontalDividerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetitem/VerticalDividerPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
 
 class DividerWidgetList extends StatefulWidget {
   String title;
-  DividerWidgetList({super.key,this.title = 'App Bar'});
+  DividerWidgetList({super.key,this.title = 'Divider Widget'});
 
   @override
   State<DividerWidgetList> createState() => _DividerWidgetListState();
@@ -29,7 +31,7 @@ class _DividerWidgetListState extends State<DividerWidgetList> {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/img_bgImage.png'),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -41,10 +43,10 @@ class _DividerWidgetListState extends State<DividerWidgetList> {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.horizontaldivider);
+                            Get.to( HorizontalDividerPage());
                             break;
                           case 1:
-                            Get.toNamed(Routes.verticaldivider);
+                            Get.to( VerticalDividerPage());
                            break;
 
                         }
@@ -52,7 +54,7 @@ class _DividerWidgetListState extends State<DividerWidgetList> {
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

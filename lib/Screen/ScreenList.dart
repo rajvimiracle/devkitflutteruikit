@@ -1,5 +1,6 @@
+/*
 import 'package:devkitflutteruikit/Constants/IconPath.dart';
-import 'package:devkitflutteruikit/Route/Routes.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -108,7 +109,9 @@ List<Listviewdata> listviewdata = [
                                   ),
                                 ]
                             ),
-                            /*child: Image.asset(listviewdata[index].img.toString(),fit: BoxFit.cover,height: 3.h,width: 3.w,),*/
+                            */
+/*child: Image.asset(listviewdata[index].img.toString(),fit: BoxFit.cover,height: 3.h,width: 3.w,),*//*
+
                           ),
                         ),
                         Padding(
@@ -148,4 +151,4 @@ class Listviewdata {
     required this.title,
     required this.subtitle,
   });
-}
+}*/

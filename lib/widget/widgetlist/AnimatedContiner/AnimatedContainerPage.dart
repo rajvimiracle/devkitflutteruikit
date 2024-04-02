@@ -1,9 +1,11 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedContiner/AnimatedContainerPage3.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
+import 'AnimatedContainerPage2.dart';
+import 'AnimatedContinerPage1.dart';
 
 class AnimatedContainerPage extends StatelessWidget {
   String title;
@@ -24,7 +26,7 @@ class AnimatedContainerPage extends StatelessWidget {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/img_bgImage.png'),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -36,13 +38,13 @@ class AnimatedContainerPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.animatedcontainer1);
+                           Get.to(AnimatedContainerPage1());
                             break;
                           case 1:
-                            Get.toNamed(Routes.animatedcontainer2);
+                            Get.to(AnimatedContainerPage2());
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatedcontainer3);
+                            Get.to(AnimatedContainerPage3());
                             break;
 
                         }
@@ -50,7 +52,7 @@ class AnimatedContainerPage extends StatelessWidget {
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

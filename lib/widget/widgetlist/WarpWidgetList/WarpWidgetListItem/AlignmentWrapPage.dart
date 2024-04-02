@@ -1,4 +1,4 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +25,8 @@ class _AlignmentWrapPageState extends State<AlignmentWrapPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+
             Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

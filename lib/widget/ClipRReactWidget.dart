@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../Constants/ImagePath.dart';
+
 
 class ClipRRectPage extends StatefulWidget {
   const ClipRRectPage({super.key});
@@ -24,8 +24,8 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
-        Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+            Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +44,7 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                    child: Image.asset(ImagePath.clip,height: 20.h,),
+                    child: Image.asset('assets/images/img_clip1.png',height: 20.h,),
                   ),
                 ),
                 SizedBox(height: 2.h,),

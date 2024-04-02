@@ -1,9 +1,16 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderRadiusContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ColoringContinerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/GradientColorContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/MarginOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/PaddingOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ShadowContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/StandartContainerPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
 
 class ContainerWidgetList extends StatefulWidget {
   String title;
@@ -38,7 +45,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/img_bgImg.png'),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -50,28 +57,28 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.standartcontiner);
+                            Get.to( StandartContainerPage());
                             break;
                           case 1:
-                            Get.toNamed(Routes.coloringcontiner);
+                            Get.to( ColoringContainerPage());
                             break;
                           case 2:
-                            Get.toNamed(Routes.gradientcolorcontiner);
+                            Get.to( GradientColorContainerPage());
                             break;
                           case 3:
-                            Get.toNamed(Routes.margincontiner);
+                            Get.to( MarginOnContainerPage());
                             break;
                           case 4:
-                            Get.toNamed(Routes.paddingcontiner);
+                            Get.to( PaddingOnContainerPage());
                             break;
                           case 5:
-                            Get.toNamed(Routes.bordercontiner);
+                            Get.to( BorderContainerPage());
                             break;
                           case 6:
-                            Get.toNamed(Routes.borderradiuscontiner);
+                            Get.to( BorderRadiusContainerPage());
                             break;
                           case 7:
-                            Get.toNamed(Routes.shadowcontiner);
+                            Get.to( ShadowContainerPage());
                             break;
 
                         }
@@ -79,7 +86,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

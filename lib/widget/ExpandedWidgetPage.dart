@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../Constants/ImagePath.dart';
+
 
 
 class ExpandedWidgetPage extends StatefulWidget {
@@ -26,7 +26,7 @@ class _ExpandedWidgetPageState extends State<ExpandedWidgetPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 6.w,right: 6.w),
           child: SingleChildScrollView(
             child: Column(

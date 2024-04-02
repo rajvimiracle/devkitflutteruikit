@@ -1,4 +1,4 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -25,7 +25,7 @@ class _AnimatedContainerPage2State extends State<AnimatedContainerPage2> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 15.h,left: 4.w,right: 4.w,bottom: 5.h),
               child: Center(
                 child: Column(

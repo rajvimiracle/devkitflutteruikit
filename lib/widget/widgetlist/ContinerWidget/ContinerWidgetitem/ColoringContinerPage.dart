@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../../Constants/ImagePath.dart';
+
 
 class ColoringContainerPage extends StatefulWidget {
   const ColoringContainerPage({super.key});
@@ -32,7 +32,7 @@ List<Coloringcontainer> coloringcontainer = [
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.h,left: 5.w,right: 5.w ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

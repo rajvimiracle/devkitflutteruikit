@@ -1,4 +1,3 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -25,7 +24,7 @@ class _AbsorbPointerPageState extends State<AbsorbPointerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Center(
               child: Stack(
                 alignment: AlignmentDirectional.center,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../Constants/ImagePath.dart';
+
 
 class FadeTransitionPage extends StatefulWidget {
   const FadeTransitionPage({super.key});
@@ -32,7 +32,7 @@ class _FadeTransitionPageState extends State<FadeTransitionPage> with TickerProv
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +45,7 @@ class _FadeTransitionPageState extends State<FadeTransitionPage> with TickerProv
               SizedBox(height: 3.h,),
               FadeTransition(
                 opacity: _animation,
-                child: Image.asset(ImagePath.clip,height: 25.h,),
+                child: Image.asset('assets/images/img_clip1.png',height: 25.h,),
 
               ),
 

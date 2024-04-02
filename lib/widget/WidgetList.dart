@@ -1,9 +1,34 @@
-import 'package:devkitflutteruikit/Constants/ImagePath.dart';
+
+import 'package:devkitflutteruikit/widget/ClipRReactWidget.dart';
+import 'package:devkitflutteruikit/widget/ExpandedWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/FadeTransitionPage.dart';
+import 'package:devkitflutteruikit/widget/GestureDetectorWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/ImageWidget.dart';
+import 'package:devkitflutteruikit/widget/InterctiveViewerPage.dart';
+import 'package:devkitflutteruikit/widget/MediaQueryWidget.dart';
+import 'package:devkitflutteruikit/widget/SideTransitionPage/SideTransitionPage.dart';
+import 'package:devkitflutteruikit/widget/StackWidgetPage/StackWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AbsorbPointerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedAlignPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedContiner/AnimatedContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedCrossFadePage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedDefaultTextPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedPhysicalModelPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AnimatedPositionedPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/AppBar/AppBarList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetList.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/AlignmentWrapPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import '../../../Route/Routes.dart';
+
+import 'IgnorePointerWidget.dart';
 
 class WidgetsListPage extends StatelessWidget {
   String title;
@@ -50,7 +75,7 @@ class WidgetsListPage extends StatelessWidget {
 
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage(ImagePath.bgimg),fit: BoxFit.cover)),
+          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/img_bgImage.png'),fit: BoxFit.cover)),
           child:  Padding( padding: EdgeInsets.all(5.w),
             child: Container(
               child:ListView.builder(
@@ -62,86 +87,86 @@ class WidgetsListPage extends StatelessWidget {
                       onTap: () {
                         switch(index){
                           case 0:
-                            Get.toNamed(Routes.abscorbpointer);
+                        Get.to(AbsorbPointerPage());
                             break;
                           case 1:
-                            Get.toNamed(Routes.alignwidget);
+                            Get.to(AlignmentWrapPage());
                             break;
                           case 2:
-                            Get.toNamed(Routes.animatealign);
+                            Get.to(AnimatedAlignPage());
                             break;
                           case 3:
-                            Get.toNamed(Routes.animatedcontainer);
+                         Get.to(AnimatedContainerPage());
                             break;
                           case 4:
-                            Get.toNamed(Routes.animatedcorsssfode);
+                            Get.to(AnimatedCrossFadePage());
                             break;
                           case 5:
-                            Get.toNamed(Routes.animateddefaulttext);
+                            Get.to(AnimatedDefaultTextPage());
                             break;
                           case 6:
-                            Get.toNamed(Routes.animatedphysicalmodel);
+                            Get.to(AnimatedPhysicalModelPage());
                             break;
                           case 7:
-                            Get.toNamed(Routes.animatedpositioned);
+                            Get.to(AnimatedPositionedPage());
                             break;
                           case 8:
-                            Get.toNamed(Routes.appbarpage);
+                            Get.to(AppBarListPage());
                             break;
                           case 9:
-                            Get.toNamed(Routes.bottomsheetlist);
+                            Get.to(BottomSheetList());
                             break;
                           case 10:
-                            Get.toNamed(Routes.clipRRectpage);
+                            Get.to(ClipRRectPage());
                             break;
                           case 11:
-                            Get.toNamed(Routes.containerlist);
+                            Get.to(ContainerWidgetList());
                             break;
                           case 12:
-                            Get.toNamed(Routes.dividerwidgetlist);
+                            Get.to(DividerWidgetList());
                             break;
                           case 13:
-                            Get.toNamed(Routes.expandedpage);
+                            Get.to(ExpandedWidgetPage());
                             break;
                           case 14:
-                               Get.toNamed(Routes.fadetransitionpage);
+                            Get.to(FadeTransitionPage());
                                break;
                           case 15:
-                            Get.toNamed(Routes.flexibalepage);
+                            Get.to(FlexibleWidgetList());
                             break;
                           case 16:
-                            Get.toNamed(Routes.gesturedetectorpage);
+                            Get.to(GestureDetectorWidgetPage());
                             break;
                           case 17:
-                            Get.toNamed(Routes.ignorepointerpage);
+                            Get.to(IgnorePointerPage());
                             break;
                           case 18:
-                            Get.toNamed(Routes.imagewidgetpage);
+                            Get.to(ImageWidgetPage());
                             break;
                           case 19:
-                            Get.toNamed(Routes.interactiveviewerpage);
+                            Get.to(InteractiveViewerPage());
                             break;
                           case 20:
-                            Get.toNamed(Routes.mediaquerywidgetpage);
+                            Get.to(MediaQueryWidgetPage());
                             break;
                           case 21:
-                            Get.toNamed(Routes.sidetransitionpage);
+                            Get.to(SideTransitionPage());
                             break;
                           case 22:
-                            Get.toNamed(Routes.stackwidgetpage);
+                            Get.to(StackWidgetPage());
                             break;
                           case 23:
-                            Get.toNamed(Routes.transfromwidgetpage);
+                            Get.to(TransformWidgetPage());
                             break;
                           case 24:
-                            Get.toNamed(Routes.warpwidgetpage);
+                            Get.to(WarpWidgetListPage());
                             break;
                               }
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage(ImagePath.conImg,), fit: BoxFit.fill,),
+                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
                         ),
                         child: Center(
                           child: Text(

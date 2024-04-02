@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
 
 class AlignWidgetPage extends StatefulWidget {
   const AlignWidgetPage({super.key});
@@ -24,7 +23,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(
               padding:  EdgeInsets.only(top: 2.h,bottom: 2.h,right: 6.w,left: 6.w,),
               child: SingleChildScrollView(

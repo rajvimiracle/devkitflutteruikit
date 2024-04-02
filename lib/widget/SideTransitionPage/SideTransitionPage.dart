@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Constants/ImagePath.dart';
 
 class SideTransitionPage extends StatefulWidget {
   const SideTransitionPage({super.key});
@@ -42,7 +41,7 @@ class _SideTransitionPageState extends State<SideTransitionPage> with SingleTick
       body: Container(
         child: Stack(
           children: [
-            Image.asset(ImagePath.bgimg,fit: BoxFit.cover,height: double.infinity,),
+            Image.asset("assets/images/img_bgImage.png",fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,7 +55,7 @@ class _SideTransitionPageState extends State<SideTransitionPage> with SingleTick
               SlideTransition(
                 
                 position: _offsetAnimation,
-                child: Image.asset(ImagePath.clip,height: 20.h,),
+                child: Image.asset("assets/images/img_clip1.png",height: 20.h,),
               ),
             ],
           ),
