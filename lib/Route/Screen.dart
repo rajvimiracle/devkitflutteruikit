@@ -16,6 +16,12 @@ import 'package:devkitflutteruikit/Screen/ScreenList/VerificationPage.dart';
 import 'package:devkitflutteruikit/widget/GestureDetectorWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/IgnorePointerWidget.dart';
 import 'package:devkitflutteruikit/widget/ImageWidget.dart';
+import 'package:devkitflutteruikit/widget/InterctiveViewerPage.dart';
+import 'package:devkitflutteruikit/widget/MediaQueryWidget.dart';
+import 'package:devkitflutteruikit/widget/StackWidgetPage/StackWidgetPage.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/RotateTransfromPage.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/ScaleTransfromPage.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/SkewTransfromPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AlignWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedContiner/AnimatedContinerPage1.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedCrossFadePage.dart';
@@ -48,10 +54,18 @@ import 'package:devkitflutteruikit/widget/FadeTransitionPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetList.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleColumnPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleRowPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/SpacingWarpPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/StandartWarpPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/VerticalDirectionWrapPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/WarpWidgetList/WarpWidgetListItem/WarpDirectionPage.dart';
+
 
 import 'package:get/get.dart';
 
 import '../Screen/ScreenList/OnBoardingPage/OnBoardingPage2.dart';
+import '../widget/SideTransitionPage/SideTransitionPage.dart';
+import '../widget/TranfromWidget/TransfromWidgetItem/TranslateTransfromPage.dart';
+import '../widget/TranfromWidget/TransfromWidgetPage.dart';
 import '../widget/WidgetList.dart';
 import '../widget/widgetlist/AbsorbPointerPage.dart';
 import '../widget/widgetlist/AnimatedAlignPage.dart';
@@ -59,6 +73,8 @@ import '../widget/widgetlist/AnimatedContiner/AnimatedContainerPage.dart';
 import '../widget/widgetlist/AnimatedContiner/AnimatedContainerPage2.dart';
 import '../widget/widgetlist/AnimatedContiner/AnimatedContainerPage3.dart';
 import '../widget/widgetlist/BottomSheet/BottomSheet3.dart';
+import '../widget/widgetlist/WarpWidgetList/WarpWidgetListItem/AlignmentWrapPage.dart';
+import '../widget/widgetlist/WarpWidgetList/WarpWidgetListPage.dart';
 
 
 class  Screens{
@@ -130,5 +146,28 @@ class  Screens{
     GetPage(name: Routes.ignorepointerpage, page: () => IgnorePointerPage()),
 
     GetPage(name: Routes.imagewidgetpage, page: () => ImageWidgetPage()),
+
+    GetPage(name: Routes.interactiveviewerpage, page: () => InteractiveViewerPage()),
+
+    GetPage(name: Routes.mediaquerywidgetpage, page: () => MediaQueryWidgetPage()),
+
+    GetPage(name: Routes.sidetransitionpage, page: () => SideTransitionPage()),
+
+    GetPage(name: Routes.stackwidgetpage, page: () => StackWidgetPage()),
+
+    GetPage(name: Routes.transfromwidgetpage, page: () => TransformWidgetPage()),
+    GetPage(name: Routes.rotatetrapage, page: () => RotateTransfromPage()),
+    GetPage(name: Routes.scaletrapage, page: () => ScaleTransfromPage()),
+    GetPage(name: Routes.translatetrapage, page: () => TranslateTransfromPage()),
+    GetPage(name: Routes.skewtrapage, page: () => SkewTransfromPage()),
+
+    GetPage(name: Routes.warpwidgetpage, page: () => WarpWidgetListPage()),
+    GetPage(name: Routes.standartpage, page: () => StandartWarpPage()),
+    GetPage(name: Routes.warpdirectionpage, page: () => WarpDirectionPage()),
+    GetPage(name: Routes.spacingpage, page: () => SpacingWarpPage()),
+    GetPage(name: Routes.alignmentpage, page: () => AlignmentWrapPage()),
+    GetPage(name: Routes.verticaldirectionpage, page: () => VerticalDirectionWrapPage()),
+
+
   ];
 }

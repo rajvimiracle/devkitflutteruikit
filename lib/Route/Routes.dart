@@ -71,9 +71,24 @@ class Routes{
 
   static const imagewidgetpage = '/imagewidgetpage';
 
+  static const interactiveviewerpage = '/interactiveviewerpage';
 
+  static const mediaquerywidgetpage = '/mediaquerywidgetpage';
 
+  static const sidetransitionpage = '/sidetransitionpage';
 
+  static const stackwidgetpage = '/stackwidgetpage';
 
+  static const transfromwidgetpage = '/transfromwidgetpage';
+  static const rotatetrapage = '/rotatetrapage';
+  static const scaletrapage = '/scaletrapage';
+  static const translatetrapage = '/translatetrapage';
+  static const skewtrapage = '/skewtrapage';
 
+  static const warpwidgetpage = '/warpwidgetpage';
+  static const standartpage = '/standartpage';
+  static const warpdirectionpage = '/warpdirectionpage';
+  static const spacingpage = '/spacingpage';
+  static const alignmentpage = '/alignmentpage';
+  static const verticaldirectionpage = '/verticaldirectionpage';
 }

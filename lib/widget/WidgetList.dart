@@ -29,6 +29,12 @@ class WidgetsListPage extends StatelessWidget {
     "Gesture Detector Widget",
     "Ignore Pointer",
     "Image Widget",
+    "Interactive Viewer",
+    "Media Query Widget",
+    "Side Transition",
+    "Stack Widget",
+    "Transform Widget",
+    "Wrap Widget",
   ];
 
   @override
@@ -111,6 +117,24 @@ class WidgetsListPage extends StatelessWidget {
                             break;
                           case 18:
                             Get.toNamed(Routes.imagewidgetpage);
+                            break;
+                          case 19:
+                            Get.toNamed(Routes.interactiveviewerpage);
+                            break;
+                          case 20:
+                            Get.toNamed(Routes.mediaquerywidgetpage);
+                            break;
+                          case 21:
+                            Get.toNamed(Routes.sidetransitionpage);
+                            break;
+                          case 22:
+                            Get.toNamed(Routes.stackwidgetpage);
+                            break;
+                          case 23:
+                            Get.toNamed(Routes.transfromwidgetpage);
+                            break;
+                          case 24:
+                            Get.toNamed(Routes.warpwidgetpage);
                             break;
                               }
                       },
