@@ -14,7 +14,7 @@ class WarpWidgetListPage extends StatefulWidget {
 }
 
 class _WarpWidgetListPageState extends State<WarpWidgetListPage> {
-  List stepperList = ["Standart Wrap","Warp Direction","Spacing Warp","Alignment Wrap","Vertical Direction Wrap"];
+  List stepperList = ["Standart Wrap","Warp Direction","Spacing Warp","Alignment Wrap",];
 
   @override
   Widget build(BuildContext context) {
@@ -52,9 +52,7 @@ class _WarpWidgetListPageState extends State<WarpWidgetListPage> {
                           case 3:
                             Get.toNamed(Routes.alignmentpage);
                             break;
-                          case 4:
-                            Get.toNamed(Routes.verticaldirectionpage);
-                            break;
+
                         }
                       },
                       child: Container(width: 80.w,height: 8.h,
