@@ -1,5 +1,4 @@
 
-import 'package:devkitflutteruikit/widget/WidgetList.dart';
 import 'package:devkitflutteruikit/widget/WidgetPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

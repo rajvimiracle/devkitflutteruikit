@@ -18,21 +18,21 @@ class _AppBarPage4State extends State<AppBarPage4> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("App Bar 4 - Properties",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("App Bar 4 - Properties",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-          Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+
         Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("App Bar 4 - Properties ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-              Text("This is the example of standart App Bar with Properties",style: TextStyle(color: Colors.black54),),
+              Text("App Bar 4 - Properties ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+              Text("This is the example of standart App Bar with Properties",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.h,),
               Container(
                 height: 8.h,
@@ -42,10 +42,9 @@ class _AppBarPage4State extends State<AppBarPage4> {
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.red.withOpacity(0.7),
+                      color:  Color(0xff9888A5).withOpacity(0.4),
                       blurRadius: 4,
                       offset: Offset(0, 8),
-
                     ),
                   ],
                 ),
