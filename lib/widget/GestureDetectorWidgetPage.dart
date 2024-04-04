@@ -19,13 +19,13 @@ class _GestureDetectorWidgetPageState extends State<GestureDetectorWidgetPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Gesture Detector Widget",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Gesture Detector Widget",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xffC0B298),
       ),
       body: Container(
         child: Stack(
           children: [
-          Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
+
         Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
           child: SingleChildScrollView(
             child: Column(

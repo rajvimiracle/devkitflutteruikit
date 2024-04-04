@@ -20,13 +20,12 @@ class _AnimatedContainerPage1State extends State<AnimatedContainerPage1> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Container 1 ",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Animated Container 1 ",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 15.h,left: 4.w,right: 4.w,bottom: 5.h),
               child: Center(
                 child: Column(
@@ -37,7 +36,7 @@ class _AnimatedContainerPage1State extends State<AnimatedContainerPage1> {
 
                       height:_height,
                       width: _width,
-                      color: Colors.pink,
+                      color:  Color(0xff9888A5).withOpacity(0.4),
                       child: Center(child: Text("Continer",style: TextStyle(fontSize: 12.sp,color: Colors.white,fontWeight: FontWeight.bold),)),
 
                     ),
@@ -73,7 +72,6 @@ class _AnimatedContainerPage1State extends State<AnimatedContainerPage1> {
   }
 }
 
-
 class CustomButton extends StatelessWidget {
   String title;
   double? fontSIze;
@@ -91,11 +89,9 @@ class CustomButton extends StatelessWidget {
     this.fontWeight,
     this.radius,
     this.size,
-
     this.bgColor = Colors.lightBlue,
     this.onTap,
     this.fontColor = Colors.white,
-
   });
 
   @override
@@ -109,7 +105,6 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(radius ?? 5),
           ),
         ),
-
         backgroundColor: MaterialStateProperty.all(bgColor ?? Colors.white ),
       ),
       child: Text(
@@ -124,7 +119,6 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
-
 
 
 

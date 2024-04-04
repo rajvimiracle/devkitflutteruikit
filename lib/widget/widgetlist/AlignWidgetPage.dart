@@ -17,13 +17,13 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
      appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Align Widget",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Align Widget",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
+
             Padding(
               padding:  EdgeInsets.only(top: 2.h,bottom: 2.h,right: 6.w,left: 6.w,),
               child: SingleChildScrollView(
@@ -35,7 +35,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),),
                     ),
                     SizedBox(height: 2.h,),
@@ -44,7 +44,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                         alignment: Alignment.topCenter,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -55,7 +55,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.topRight,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -66,7 +66,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -77,7 +77,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.center,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -88,7 +88,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.centerRight,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -99,7 +99,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.bottomLeft,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -110,7 +110,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.bottomCenter,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),
@@ -121,7 +121,7 @@ class _AlignWidgetPageState extends State<AlignWidgetPage> {
                     Container(
                       width: double.infinity,
                       height: 15.h,
-                      color: Colors.indigoAccent.withOpacity(0.9),
+                      color: Color(0xff9888A5).withOpacity(0.6),
                       child: Align(
                           alignment: Alignment.bottomRight,
                           child: Text("Text",style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w900,fontSize: 10.sp,letterSpacing: 1),)),

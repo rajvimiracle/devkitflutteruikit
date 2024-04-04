@@ -35,22 +35,22 @@ class _SideTransitionPageState extends State<SideTransitionPage> with SingleTick
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Side Transition",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Side Transition",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset("assets/images/img_bgImage.png",fit: BoxFit.cover,height: double.infinity,),
+
         Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Side Transition",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Side Transition",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-              Text("Animates the position of a widget relative to its notamal position.",style: TextStyle(color: Colors.black54),),
+              Text("Animates the position of a widget relative to its normal position.",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.h,),
               SlideTransition(
                 

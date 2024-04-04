@@ -18,8 +18,8 @@ class _WarpDirectionPageState extends State<WarpDirectionPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("WarpDirection",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("WarpDirection",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xffC0B298),
       ),
       body: Container(
         child: Stack(
@@ -30,19 +30,19 @@ class _WarpDirectionPageState extends State<WarpDirectionPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("WarpDirection",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                    Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54),),
+                    Text("WarpDirection",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+                    Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                     SizedBox(height: 2.h,),
-                    Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                    Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                     SizedBox(height: 2.h,),
-                    Text("Direction horizontal",style: TextStyle(color: Colors.blue),),
+                    Text("Direction horizontal",style: TextStyle(color: Color(0xffC0B298),),),
                     Wrap(
                       children: [
                         Text("aaaaaabbbbbbbccccccgggggggrrrrrhhhhhhrrrreeeeejjjjjkkkkkyyyyyuuuuttttiiiiooooeeeeeewqwwwllxxlvfgmhyyuiyioeoedjfntjueri")
                       ],
                     ),
                     SizedBox(height: 2.h,),
-                    Text("Direction vertical",style: TextStyle(color: Colors.blue),),
+                    Text("Direction vertical",style: TextStyle(color: Color(0xffC0B298)),),
                     SizedBox(height: 2.h,),
                     Wrap(
                       children: [

@@ -18,24 +18,22 @@ class _StandartContainerPageState extends State<StandartContainerPage> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Standart Container",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Standart Container",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
-
             Padding(padding: EdgeInsets.only(top: 4.h,left: 5.w,right: 5.w ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Standart Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                  Text("This is the example of Container without any style",style: TextStyle(color: Colors.black54),),
+                  Text("Standart Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+                  Text("This is the example of Container without any style",style: TextStyle(color: Colors.black54,fontSize: 12.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                   SizedBox(height: 1.h,),
-                  Text("this text is inside continer",style: TextStyle(color: Colors.black54,fontSize: 10.sp),),
+                  Text("this text is inside continer",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                 ],
               ),
             ),

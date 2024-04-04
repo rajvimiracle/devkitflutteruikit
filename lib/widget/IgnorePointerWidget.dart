@@ -22,28 +22,26 @@ class _IgnorePointerPageState extends State<IgnorePointerPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Ignore Pointer",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Ignore Pointer",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 6.w,right: 6.w,bottom: 4.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Ignore Pointer",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Ignore Pointer",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.5.h,),
-              Text("A Widget that is invisible during hit testing",style: TextStyle(color: Colors.black54),),
+              Text("A Widget that is invisible during hit testing",style: TextStyle(color: Colors.black54,fontSize: 13.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 2.h,),
              Switch(
                focusColor: Colors.blue,
                   activeColor: Colors.blue,
                   inactiveThumbColor: Colors.blue,
-
                   value: _isClick,
                   onChanged: (bool value) {
                     setState(() {

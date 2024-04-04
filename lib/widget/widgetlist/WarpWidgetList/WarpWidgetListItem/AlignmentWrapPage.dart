@@ -19,8 +19,8 @@ class _AlignmentWrapPageState extends State<AlignmentWrapPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Alignment Wrap",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Alignment Wrap",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
@@ -31,12 +31,12 @@ class _AlignmentWrapPageState extends State<AlignmentWrapPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Alignment Warp ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                  Text("this is the example of of wrap widget with aligmennt",style: TextStyle(color: Colors.black54),),
+                  Text("Alignment Warp ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+                  Text("this is the example of of wrap widget with aligmennt",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Align Left",style: TextStyle(color: Colors.blue),),
+                  Text("Align Left",style: TextStyle(color: Color(0xff9888A5)),),
                   Wrap(
                     alignment:WrapAlignment.end,
                     spacing: 10.0,
@@ -46,7 +46,7 @@ class _AlignmentWrapPageState extends State<AlignmentWrapPage> {
                     ],
                   ),
                   SizedBox(height: 2.h,),
-                  Text("Align Center",style: TextStyle(color: Colors.blue),),
+                  Text("Align Center",style: TextStyle(color: Color(0xff9888A5)),),
 
                   Wrap(
                     alignment: WrapAlignment.center,

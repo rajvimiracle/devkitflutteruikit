@@ -18,8 +18,8 @@ class _StandartWarpPageState extends State<StandartWarpPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Standart Wrap",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Standart Wrap",style: TextStyle(color: Colors.white ,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
@@ -30,10 +30,10 @@ class _StandartWarpPageState extends State<StandartWarpPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Standart Wrap",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-              Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54),),
+              Text("Standart Wrap",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+              Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54,fontSize: 13.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 2.h,),
               Wrap(
                 children: [

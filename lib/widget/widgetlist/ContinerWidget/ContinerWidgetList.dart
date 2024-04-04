@@ -21,16 +21,15 @@ class ContainerWidgetList extends StatefulWidget {
 }
 
 List<Widgetdata> widgetdata = [
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar1.png", title: "AppBar 1 - Standart", ),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_contianer2.png", title: "AppBar 2 - Image Title ", ),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_appbar3.png", title: "AppBar 3 - Icon AppBar", ),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_contianer3.png", title: "AppBar 4 - Properties", ),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_contianer4.png", title: "AppBar 2 - Image Title ", ),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_container5.png", title: "AppBar 3 - Icon AppBar", ),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_container6.png", title: "AppBar 4 - Properties", ),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_appbar2.png", title: "AppBar 2 - Image Title ", ),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar1.png", title: "Standart Container", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_contianer2.png", title: "Coloring Container", ),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_appbar3.png", title: "Gradient Color Container", ),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_contianer3.png", title: "Margin On Container", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_contianer4.png", title: "Padding On Container", ),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_container5.png", title: "Border Container", ),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_container6.png", title: "Border Radius Container", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_appbar2.png", title: "Shadow Container", ),
 ];
-
 class _ContainerWidgetListState extends State<ContainerWidgetList> {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
             icon: Icon(Icons.arrow_back,size: 4.h,),
 
           ),
-          title: Text("App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("Container Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),

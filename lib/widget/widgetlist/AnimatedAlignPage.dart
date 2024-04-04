@@ -19,15 +19,13 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Align",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Animated Align",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xffC0B298),
       ),
       body: Container(
         padding: EdgeInsets.only(top: 5.h,right: 7.w,left: 7.w),
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
-
             Wrap(
               runSpacing: 19,
               spacing: 40,
@@ -111,13 +109,12 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
 
               ],
             ),
-
             Padding(
               padding:  EdgeInsets.only(top: 52.h),
               child: Container(
                 height: 25.h,
                 width: 55.w,
-                color: Colors.pink,
+                color: Color(0xffC0B298).withOpacity(0.6),
                 child: AnimatedAlign(
                   duration: Duration(seconds: 1),
                   alignment: _alignment,

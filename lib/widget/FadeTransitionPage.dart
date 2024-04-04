@@ -26,22 +26,21 @@ class _FadeTransitionPageState extends State<FadeTransitionPage> with TickerProv
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Fade Transition",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Fade Transition",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Fade Transition",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Fade Transition",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-              Text("Animates the opacity of a widget",style: TextStyle(color: Colors.black54),),
+              Text("Animates the opacity of a widget",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 3.h,),
               FadeTransition(
                 opacity: _animation,

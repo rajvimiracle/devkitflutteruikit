@@ -18,8 +18,8 @@ class _SpacingWarpPageState extends State<SpacingWarpPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Spacing Warp",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Spacing Warp",style: TextStyle(color: Colors.white ,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
@@ -30,12 +30,12 @@ class _SpacingWarpPageState extends State<SpacingWarpPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Spacing Warp ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                  Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54),),
+                  Text("Spacing Warp ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+                  Text("this is the example of of wrap widget without any style",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Spacing horizontal",style: TextStyle(color: Colors.blue),),
+                  Text("Spacing horizontal",style: TextStyle(color: Color(0xff9BBEC7),),),
                   Wrap(
                     spacing: 10.0,
                     runSpacing: 8.0,
@@ -44,7 +44,7 @@ class _SpacingWarpPageState extends State<SpacingWarpPage> {
                     ],
                   ),
                   SizedBox(height: 2.h,),
-                  Text("Spacing vertical",style: TextStyle(color: Colors.blue),),
+                  Text("Spacing vertical",style: TextStyle(color: Color(0xff9BBEC7),),),
                   SizedBox(height: 2.h,),
                   Wrap(
                     direction: Axis.horizontal,

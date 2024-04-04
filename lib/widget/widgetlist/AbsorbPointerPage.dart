@@ -18,13 +18,12 @@ class _AbsorbPointerPageState extends State<AbsorbPointerPage> {
       appBar: AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Absorb Pointer",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Absorb Pointer",style: TextStyle(color: Colors.white ,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Center(
               child: Stack(
                 alignment: AlignmentDirectional.center,

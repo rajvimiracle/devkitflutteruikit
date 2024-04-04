@@ -1,73 +1,132 @@
 import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleColumnPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleRowPage.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
+
+
+
 class FlexibleWidgetList extends StatefulWidget {
-  String title;
-  FlexibleWidgetList({super.key,this.title = 'Flexible Widget'});
+  const FlexibleWidgetList({super.key});
 
   @override
   State<FlexibleWidgetList> createState() => _FlexibleWidgetListState();
 }
 
-class _FlexibleWidgetListState extends State<FlexibleWidgetList> {
-  List stepperList = ["Flexible Row ","Flexible Column",];
+List<Widgetdata> widgetdata = [
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_f1.png", title: "Flexible Column", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_f2.png", title: "Flexible Row", ),
 
+];
+
+class _FlexibleWidgetListState extends State<FlexibleWidgetList> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:AppBar(centerTitle: true,
-        leading: IconButton(
-          onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
-      ),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () => Get.back(),
+            icon: Icon(Icons.arrow_back,size: 5.h,),
 
-      body: SafeArea(
-        child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: const BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/img_bgImage.png'),fit: BoxFit.cover)),
-          child:  Padding( padding: EdgeInsets.all(5.w),
-            child: Container(
-              child:ListView.builder(
-                itemCount: stepperList.length,shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding:  EdgeInsets.all(2.w),
-                    child: InkWell(
-                      onTap: () {
-                        switch(index){
-                          case 0:
-                            Get.to( FlexibleRowPage());
-                            break;
-                          case 1:
-                            Get.to( FlexibleColumnPage());
-                            break;
-                        }
-                      },
-                      child: Container(width: 80.w,height: 8.h,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(2.w),
-                          image: const DecorationImage(image: AssetImage('assets/images/img_con.png',), fit: BoxFit.fill,),
-                        ),
-                        child: Center(
-                          child: Text(
-                            stepperList[index],
-                            style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),
-                          ),
+          ),
+          title: Text("Flexible Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          actions: [
+          ],
+        ),
+        body: Padding(
+          padding: EdgeInsets.only(top: 4.h,right: 4.w,left: 4.w,bottom: 2.h),
+          child: ListView.separated(
+
+            shrinkWrap: true,
+            itemCount: widgetdata.length,
+            itemBuilder: (context, index) {
+              return  InkWell(
+                onTap: () {
+                  switch(index){
+                    case 0:
+                      Get.to(FlexibleColumnPage());
+                      break;
+                    case 1:
+                      Get.to(FlexibleRowPage());
+                      break;
+
+
+                  }
+                },
+                child: Row(
+                  children: [
+                    Container(
+                      height: 9.h,
+                      width: 18.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(6)),
+                        color: widgetdata[index].color1,
+                        image: DecorationImage(
+                          image: AssetImage(widgetdata[index].img.toString()),scale: 1,
                         ),
                       ),
                     ),
-                  );
-                },
-              ),
-            ),
+                    SizedBox(width: 4.w,),
+                    Container(
+                      height: 9.h,
+                      width: 70.w,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(Radius.circular(10),),
+                      ),
+                      child: Padding(
+                        padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 2.5.h,),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 15.sp),),
+
+                              ],
+                            ),
+                            Padding(
+                              padding:  EdgeInsets.only(bottom: 2.h),
+                              child: CircleAvatar(
+
+                                radius: 15,
+                                backgroundColor:  widgetdata[index].color1,
+                                child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }, separatorBuilder: (BuildContext context, int index) { return SizedBox(height: 2.h,); },
           ),
         ),
+
       ),
     );
   }
 }
+
+
+
+
+
+
+class Widgetdata {
+  String img;
+  Color color1;
+  String title;
+  Widgetdata({
+    required this.color1,
+    required this.img,
+    required this.title,
+
+  });
+}
+

@@ -16,27 +16,26 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Border Container",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Border Container",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.h,left: 5.w,right: 5.w,bottom: 4.h ),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Border Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("Border Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                 Text("This is the example of border on contiainer ",style: TextStyle(color: Colors.black54),),
                 SizedBox(height: 2.h,),
-                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                 SizedBox(height: 1.5.h,),
-                Text("Border all",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
+                Text("Border all",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 11.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 53.w,
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -51,11 +50,11 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border all with color",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 4.h,
+                  height: 5.h,
                   width: 53.w,
                   decoration: BoxDecoration(
                       border: Border.all(
-                        color: Colors.pink,
+                        color: Color(0xff9BBEC7),
                         width: 1.w,
                       )
                   ),
@@ -65,7 +64,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border only 1 side",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 50.w,
                   decoration: BoxDecoration(
                       border: Border(
@@ -81,7 +80,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border only 2 side",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 50.w,
                   decoration: BoxDecoration(
                     border: Border(
@@ -101,7 +100,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border only 3 side",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 50.w,
                   decoration: BoxDecoration(
                     border: Border(
@@ -138,7 +137,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border simetric in horizontal",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 50.w,
                   decoration: BoxDecoration(
                     border: Border.symmetric(
@@ -151,7 +150,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border width",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 50.w,
                   decoration: BoxDecoration(
                     border: Border(
@@ -164,7 +163,7 @@ class _BorderContainerPageState extends State<BorderContainerPage> {
                 Text("Border all width",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h,),
                 Container(
-                  height: 3.h,
+                  height: 4.h,
                   width: 51.5.w,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black,width: 0.5.w,

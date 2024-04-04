@@ -16,33 +16,31 @@ class _ShadowContainerPageState extends State<ShadowContainerPage> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Shadow Container",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Shadow Container",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xffC0B298),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
-
             Padding(padding: EdgeInsets.only(top: 4.h,left: 5.w,right: 5.w,bottom: 4.h ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Shadow Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Shadow Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               Text("This is the example of Shadow on contiainer ",style: TextStyle(color: Colors.black54),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.5.h,),
               Text("Continer with Shadow",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
               SizedBox(height: 0.5.h,),
               Container(
-                height: 3.h,
+                height: 4.h,
                 width: 50.w,
                 decoration: BoxDecoration(
-                color: Colors.blueAccent,
+                color: Color(0xffC0B298).withOpacity(0.7),
                   boxShadow:[
                     BoxShadow(
-                      color: Colors.blueGrey,
+                      color: Colors.blueGrey.withOpacity(0.5),
                       blurRadius: 2,
                       offset: Offset(12, 10),
                     )
@@ -55,13 +53,13 @@ class _ShadowContainerPageState extends State<ShadowContainerPage> {
               Text("Continer with Shadow and blur",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
               SizedBox(height: 0.5.h,),
               Container(
-                height: 3.h,
+                height: 4.h,
                 width: 50.w,
                 decoration: BoxDecoration(
-                    color: Colors.blueAccent,
+                    color: Color(0xffC0B298).withOpacity(0.7),
                     boxShadow:[
                       BoxShadow(
-                        color: Colors.blueGrey,
+                        color: Color(0xffC0B298).withOpacity(0.4),
                         blurRadius: 10,
                         offset: Offset(12, 10),
                       )
@@ -73,10 +71,10 @@ class _ShadowContainerPageState extends State<ShadowContainerPage> {
               Text("Continer with multi  Shadow",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
               SizedBox(height: 0.5.h,),
               Container(
-                height: 3.h,
+                height: 4.h,
                 width: 50.w,
                 decoration: BoxDecoration(
-                    color: Colors.blueAccent,
+                    color: Color(0xffC0B298).withOpacity(0.7),
                     boxShadow:[
                       BoxShadow(
                         color: Colors.blueGrey,
@@ -85,7 +83,7 @@ class _ShadowContainerPageState extends State<ShadowContainerPage> {
                       ),
                     
                       BoxShadow(
-                        color: Colors.red,
+                        color: Colors.red.withOpacity(0.3),
                         blurRadius: 10,
                         offset: Offset(12, 10),
                       ),

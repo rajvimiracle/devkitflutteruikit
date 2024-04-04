@@ -18,8 +18,8 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Gradient Color Container",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Gradient Color Container",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
@@ -30,12 +30,12 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Gradient Color Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                Text("This is the example of gradient on contiainer using different method",style: TextStyle(color: Colors.black54),),
+                Text("Gradient Color Container",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
+                Text("This is the example of gradient on contiainer using different method",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
+                SizedBox(height: 3.h,),
+                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                 SizedBox(height: 2.h,),
-                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
-                SizedBox(height: 2.h,),
-                Text("Linear Gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Linear Gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
                   height: 9.h,
@@ -51,10 +51,10 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
                   ),
                 ),
                 SizedBox(height: 2.h,),
-                Text("Linear Gradient from top left into bottom right",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Linear Gradient from top left into bottom right",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
-                  height: 9.h,
+                  height: 10.h,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
@@ -67,10 +67,10 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
                   ),
                 ),
                 SizedBox(height: 2.h,),
-                Text("Linear Gradient from top left into bottom right with multiple color",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Linear Gradient from top left into bottom right with multiple color",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
-                  height: 9.h,
+                  height: 10.h,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
@@ -84,10 +84,10 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
                   ),
                 ),
                 SizedBox(height: 2.h,),
-                Text("Radial Gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Radial Gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
-                  height: 9.h,
+                  height: 10.h,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       gradient: RadialGradient(
@@ -100,10 +100,10 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
                   ),
                 ),
                 SizedBox(height: 2.h,),
-                Text("Radial Gradient with multiple color",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Radial Gradient with multiple color",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
-                  height: 9.h,
+                  height: 10.h,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       gradient: RadialGradient(
@@ -117,10 +117,10 @@ class _GradientColorContainerPageState extends State<GradientColorContainerPage>
                   ),
                 ),
                 SizedBox(height: 2.h,),
-                Text("Radial Gradient with multiple color and move position of the gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 9.sp),),
+                Text("Radial Gradient with multiple color and move position of the gradient",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 10.sp),),
                 SizedBox(height: 0.5.h),
                 Container(
-                  height: 9.h,
+                  height: 10.h,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     gradient: RadialGradient(

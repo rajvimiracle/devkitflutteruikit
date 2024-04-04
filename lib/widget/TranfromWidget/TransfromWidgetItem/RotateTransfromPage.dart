@@ -21,23 +21,23 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Rotate Transform",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Rotate Transform",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-          Image.asset("assets/images/img_bgImage.png",fit: BoxFit.cover,height: double.infinity,),
+
         Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Rotate Transform",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("Rotate Transform",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-                Text("This is the example of Rotate Transform on conitner ",style: TextStyle(color: Colors.black54),),
+                Text("This is the example of Rotate Transform on conitner ",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                 SizedBox(height: 2.h,),
-                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                 SizedBox(height: 2.h,),
                 Text("roatate 15 degree at the center"),
                 Padding(
@@ -46,7 +46,7 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
                     child: Container(
                       height: 9.h,
                       width: 20.w,
-                      color: Colors.pink,
+                      color: Color(0xff9888A5).withOpacity(0.5),
                       child: Text("i am here",style: TextStyle(color: Colors.white,fontSize: 13.sp),),
 
                     ),
@@ -60,7 +60,7 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
                     child: Container(
                       height: 9.h,
                       width: 20.w,
-                      color: Colors.pink,
+                      color: Color(0xff9888A5).withOpacity(0.5),
                       child: Text("i am here",style: TextStyle(color: Colors.white,fontSize: 13.sp),),
                     ),
                   ),
@@ -73,7 +73,7 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
                     child: Container(
                       height: 9.h,
                       width: 20.w,
-                      color: Colors.pink,
+                      color:Color(0xff9888A5).withOpacity(0.5),
                       child: Text("i am here",style: TextStyle(color: Colors.white,fontSize: 13.sp),),
                     ),
                   ),
@@ -86,7 +86,7 @@ class _RotateTransfromPageState extends State<RotateTransfromPage> {
                     child: Container(
                       height: 9.h,
                       width: 20.w,
-                      color: Colors.pink,
+                      color: Color(0xff9888A5).withOpacity(0.5),
                       child: Text("i am here",style: TextStyle(color: Colors.white,fontSize: 13.sp),),
                     ),
                   ),

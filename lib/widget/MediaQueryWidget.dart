@@ -18,22 +18,21 @@ class _MediaQueryWidgetPageState extends State<MediaQueryWidgetPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Media Query Widget",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Media Query Widget",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xffC0B298),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 9.w,left: 5.w,right: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Media Query Widget",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Media Query Widget",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.h,),
-              Text("Media Queary Widget used to get device information screen",style: TextStyle(color: Colors.black54),),
+              Text("Media Queary Widget used to get device information screen",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
               SizedBox(height: 2.h,),
-              Text("Device Information",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Device Information",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 2.h,),
               Row(
                 children: [

@@ -18,8 +18,8 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Interactive Viewer",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Interactive Viewer",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
@@ -29,11 +29,11 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Interactive Viewer",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Interactive Viewer",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-              Text("A widget that enables pan and zoom interctions with its child.",style: TextStyle(color: Colors.black54),),
+              Text("A widget that enables pan and zoom interctions with its child.",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
               SizedBox(height: 2.h,),
-              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+              Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
               SizedBox(height: 1.h,),
               InteractiveViewer(child: Image.asset('assets/images/img_clip1.png',height: 30.h,),
                maxScale: 5,

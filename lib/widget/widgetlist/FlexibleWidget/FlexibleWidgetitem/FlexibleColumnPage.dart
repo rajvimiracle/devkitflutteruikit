@@ -18,23 +18,21 @@ class _FlexibleColumnPageState extends State<FlexibleColumnPage> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Flexible Row",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Flexible Column",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xff9888A5),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
-
             Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Flexible Row",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Flexible Column",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-                  Text("This is the example of flexible row",style: TextStyle(color: Colors.black54),),
+                  Text("This is the example of flexible column",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                   SizedBox(height: 1.h,),
                   Padding(
                     padding:  EdgeInsets.only(left: 3.w,right: 3.w),

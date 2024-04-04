@@ -14,7 +14,10 @@ import 'package:devkitflutteruikit/widget/IgnorePointerWidget.dart';
 import 'package:devkitflutteruikit/widget/ImageWidget.dart';
 import 'package:devkitflutteruikit/widget/InterctiveViewerPage.dart';
 import 'package:devkitflutteruikit/widget/MediaQueryWidget.dart';
+import 'package:devkitflutteruikit/widget/RotationTransition/RotationTransitionPage.dart';
 import 'package:devkitflutteruikit/widget/SafeAreaWidget/SafeAreaWidgetListPage.dart';
+import 'package:devkitflutteruikit/widget/SizeTransitionWidget/SizeTransitionPage.dart';
+import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/ScaleTransfromPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AlignWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedAlignPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetList.dart';
@@ -25,7 +28,8 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'ButtonPage.dart';
-import 'ExpandedWidgetPage.dart';
+import 'ExpandedeWidget/ExpandedWidgetPage.dart';
+import 'ScaleTransitionWidget/ScaleTransitionPage.dart';
 import 'SideTransitionPage/SideTransitionPage.dart';
 import 'SnakBarListPage.dart';
 import 'TranfromWidget/TransfromWidgetPage.dart';
@@ -76,6 +80,10 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_opacity.png", title: "Opacity Widget", subtitle: "A widget that makes its child\npartially transparent.",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_safearea.png", title: "Safe Area Widget", subtitle: "SafeArea widget is an essential\ncomponent used to ensure a Flutter",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Animation Widget", subtitle: "The Widget to create a widget that\nperforms a reusable animation",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "Rotation Transition", subtitle: "Animates the rotation of a widget",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Scale Transition", subtitle: "Animates the scale of a transformed  widget",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Size Transition", subtitle: "Animates its own size and clips\nand align its child",),
+
 ];
 
 class _WidgetPageState extends State<WidgetPage> {
@@ -168,31 +176,43 @@ class _WidgetPageState extends State<WidgetPage> {
                       Get.to(MediaQueryWidgetPage());
                       break;
                     case 20:
-                      Get.to(DrawerListPage());
+                      Get.to(BottomSheetListPage());
                       break;
                     case 21:
-                      Get.to(SnakBarListPage());
+                      Get.to(DrawerListPage());
                       break;
                     case 22:
-                      Get.to(AspectRatioPage());
+                      Get.to(SnakBarListPage());
                       break;
                     case 23:
-                      Get.to(DataTablePage());
+                      Get.to(AspectRatioPage());
                       break;
                     case 24:
-                      Get.to(DismissibleListPage());
+                      Get.to(DataTablePage());
                       break;
                     case 25:
-                      Get.to(HeroWidgetPage());
+                      Get.to(DismissibleListPage());
                       break;
                     case 26:
-                      Get.to(ImageWidgetPage());
+                      Get.to(HeroWidgetPage());
                       break;
                     case 27:
-                      Get.to(SafeAreaWidgetListPage());
+                      Get.to(ImageWidgetPage());
                       break;
                     case 28:
+                      Get.to(SafeAreaWidgetListPage());
+                      break;
+                    case 29:
                       Get.to(AnimationWidgetListPage());
+                      break;
+                    case 30:
+                      Get.to(RotationTransitionPage());
+                      break;
+                    case 31:
+                      Get.to(ScaleTransitionPage());
+                      break;
+                    case 32:
+                      Get.to(SizeTransitionPage());
                       break;
                   }
                 },

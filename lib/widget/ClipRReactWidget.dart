@@ -18,23 +18,22 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("ClipRRect Widget",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("ClipRRect Widget",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.h,left: 4.w,right: 4.w,bottom: 4.h),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("ClipRRect Widget",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("ClipRRect Widget",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-                Text("A Widget that clips its child using a rounded rectangle",style: TextStyle(color: Colors.black54),),
+                Text("A Widget that clips its child using a rounded rectangle",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                 SizedBox(height: 2.h,),
-                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                 SizedBox(height: 2.h,),
                 Text("ClipRReact on image"),
                 SizedBox(height: 0.5.h,),
@@ -55,7 +54,7 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
                   width: 45.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                       color: Colors.pink,
+                       color: Color(0xff9BBEC7).withOpacity(0.6),
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -70,11 +69,11 @@ class _ClipRRectPageState extends State<ClipRRectPage> {
                   width: 45.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                    color: Colors.pink,
+                    color: Color(0xff9BBEC7).withOpacity(0.6),
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                    child: Text("ababababababababababababbababababababababbababababababababababababababababababababababababbabababababababababababababababababababababababababababababababababbabababababababababababbabababababbbababababab",style: TextStyle(letterSpacing: 1),),
+                    child: Text("ababababababababababababbababababababababbababababababababababababababababababababababababbabababababababababababababababababababababababababababababababababbabababababababababababbabababababbbababababab",style: TextStyle(letterSpacing: 1,color: Colors.black54),),
                   ),
                 ),
 
