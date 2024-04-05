@@ -18,7 +18,7 @@ class BottomSheetListPage extends StatefulWidget {
 List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar1.png", title: "Standart BottomSheet", ),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_appbar2.png", title: "BottomSheet with shape", ),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_appbar3.png", title: "BottomSheet dragdown to dismiss ", ),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_appbar3.png", title: "BottomSheet dragdown\nto dismiss", ),
 ];
 
 class _BottomSheetListPageState extends State<BottomSheetListPage> {
@@ -70,7 +70,7 @@ class _BottomSheetListPageState extends State<BottomSheetListPage> {
                     ),
                     SizedBox(width: 4.w,),
                     Container(
-                      height: 9.h,
+                      height: 9.5.h,
                       width: 70.w,
                       decoration: BoxDecoration(
                         color: Colors.grey.withOpacity(0.1),

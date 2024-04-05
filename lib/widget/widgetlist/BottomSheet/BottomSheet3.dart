@@ -19,22 +19,21 @@ class _BottomSheetPage3State extends State<BottomSheetPage3> {
         leading: IconButton(
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("BottomSheet dragdown to dismiss",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("BottomSheet dragdown to dismiss",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor:  Color(0xff9BBEC7),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 4.w,left: 5.w,right: 5.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("BottomSheet dragdown to dismiss",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("BottomSheet dragdown to dismiss",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
 
-                  Text("This is the example of Bottom Sheet and must be dragdown or press back to dismiss",style: TextStyle(color: Colors.black54),),
+                  Text("This is the example of Bottom Sheet and must be dragdown or press back to dismiss",style: TextStyle(color: Colors.black54,fontSize: 11.sp),),
                   SizedBox(height: 2.h,),
-                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.sp),),
+                  Text("Example",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13.sp),),
                   SizedBox(height: 1.h,),
                   CustomButton(title: "Open BottomSheet",
                       onTap: () {

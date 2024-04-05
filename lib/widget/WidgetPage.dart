@@ -1,37 +1,33 @@
-import 'dart:ui';
-
-import 'package:devkitflutteruikit/widget/AnimationWidget/AnimationWidgetListPage.dart';
 import 'package:devkitflutteruikit/widget/AspectRatio/AspectRatioPage.dart';
-import 'package:devkitflutteruikit/widget/CardWidget/CardListPage.dart';
 import 'package:devkitflutteruikit/widget/ClipRReactWidget.dart';
-import 'package:devkitflutteruikit/widget/DataTable/DataTablePage.dart';
-import 'package:devkitflutteruikit/widget/DismissibleList/DismissibleListPage.dart';
-import 'package:devkitflutteruikit/widget/DrawerListPage.dart';
 import 'package:devkitflutteruikit/widget/FadeTransitionPage.dart';
 import 'package:devkitflutteruikit/widget/GestureDetectorWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/HeroWidget/HeroWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/IgnorePointerWidget.dart';
-import 'package:devkitflutteruikit/widget/ImageWidget.dart';
 import 'package:devkitflutteruikit/widget/InterctiveViewerPage.dart';
 import 'package:devkitflutteruikit/widget/MediaQueryWidget.dart';
 import 'package:devkitflutteruikit/widget/RotationTransition/RotationTransitionPage.dart';
 import 'package:devkitflutteruikit/widget/SafeAreaWidget/SafeAreaWidgetListPage.dart';
-import 'package:devkitflutteruikit/widget/SizeTransitionWidget/SizeTransitionPage.dart';
-import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/ScaleTransfromPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AlignWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedAlignPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetList.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
-import 'ButtonPage.dart';
+import 'AnimatedItem/AnimatedWidgetListPage.dart';
+import 'Button/ButtonsPage.dart';
+import 'CardItem/CardWidgetListPage.dart';
+import 'DataTable/DataTableWidget.dart';
+import 'DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
+import 'Dismissible/DismissibleListPage.dart';
+import 'DrawerItem/DrawerListPage.dart';
 import 'ExpandedeWidget/ExpandedWidgetPage.dart';
-import 'ScaleTransitionWidget/ScaleTransitionPage.dart';
+import 'ImageWidget/ImageWidgetPage.dart';
+import 'OpacityWidget/TextOpacityPage.dart';
+import 'ScaleTransition/ScaleTransitionWidget.dart';
 import 'SideTransitionPage/SideTransitionPage.dart';
-import 'SnakBarListPage.dart';
+import 'SizeTransition/SizeTransitionPage.dart';
+import 'SnackBarWidgetItem/SnackBarListPage.dart';
 import 'TranfromWidget/TransfromWidgetPage.dart';
 import 'widgetlist/AbsorbPointerPage.dart';
 import 'widgetlist/AnimatedContiner/AnimatedContainerPage.dart';
@@ -81,9 +77,9 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_safearea.png", title: "Safe Area Widget", subtitle: "SafeArea widget is an essential\ncomponent used to ensure a Flutter",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Animation Widget", subtitle: "The Widget to create a widget that\nperforms a reusable animation",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "Rotation Transition", subtitle: "Animates the rotation of a widget",),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Scale Transition", subtitle: "Animates the scale of a transformed  widget",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Scale Transition", subtitle: "Animates the scale of a\ntransformed  widget",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Size Transition", subtitle: "Animates its own size and clips\nand align its child",),
-
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "DecoratedBox Transition", subtitle: "Animates the rotation of a widget",),
 ];
 
 class _WidgetPageState extends State<WidgetPage> {
@@ -128,7 +124,7 @@ class _WidgetPageState extends State<WidgetPage> {
                       Get.to(ExpandedWidgetPage());
                       break;
                     case 4:
-                      Get.to(ButtonPage());
+                      Get.to(ButtonsPage());
                       break;
                     case 5:
                       Get.to(DividerWidgetList());
@@ -182,7 +178,7 @@ class _WidgetPageState extends State<WidgetPage> {
                       Get.to(DrawerListPage());
                       break;
                     case 22:
-                      Get.to(SnakBarListPage());
+                      Get.to(SnackBarListPage());
                       break;
                     case 23:
                       Get.to(AspectRatioPage());
@@ -200,19 +196,25 @@ class _WidgetPageState extends State<WidgetPage> {
                       Get.to(ImageWidgetPage());
                       break;
                     case 28:
-                      Get.to(SafeAreaWidgetListPage());
+                      Get.to(TextOpacityPage());
                       break;
                     case 29:
-                      Get.to(AnimationWidgetListPage());
+                      Get.to(SafeAreaWidgetListPage());
                       break;
                     case 30:
-                      Get.to(RotationTransitionPage());
+                      Get.to(AnimationWidgetListPages());
                       break;
                     case 31:
-                      Get.to(ScaleTransitionPage());
+                      Get.to(RotationTransitionPage());
                       break;
                     case 32:
+                      Get.to(ScaleTransitionPage());
+                      break;
+                    case 33:
                       Get.to(SizeTransitionPage());
+                      break;
+                    case 34:
+                      Get.to(DecoratedBoxTransitionPage());
                       break;
                   }
                 },
@@ -270,19 +272,11 @@ class _WidgetPageState extends State<WidgetPage> {
   }
 }
 
-
-
-
-
-
 class Widgetdata {
   String img;
   Color color1;
   String title;
   String subtitle;
-
-
-
 
   Widgetdata({
    required this.color1,

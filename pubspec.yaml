@@ -38,6 +38,7 @@ dependencies:
   sizer:
   get:
   flame: ^1.0.0
+  flutter_styled_toast: ^2.2.1
 
 dev_dependencies:
   flutter_test:
