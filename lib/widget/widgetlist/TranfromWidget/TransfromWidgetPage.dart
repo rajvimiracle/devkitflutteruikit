@@ -1,10 +1,12 @@
-import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/RotateTransfromPage.dart';
-import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/ScaleTransfromPage.dart';
-import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/SkewTransfromPage.dart';
-import 'package:devkitflutteruikit/widget/TranfromWidget/TransfromWidgetItem/TranslateTransfromPage.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+
+import 'TransfromWidgetItem/RotateTransfromPage.dart';
+import 'TransfromWidgetItem/ScaleTransfromPage.dart';
+import 'TransfromWidgetItem/SkewTransfromPage.dart';
+import 'TransfromWidgetItem/TranslateTransfromPage.dart';
 
 
 

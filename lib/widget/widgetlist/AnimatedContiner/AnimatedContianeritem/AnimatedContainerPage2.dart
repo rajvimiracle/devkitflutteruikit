@@ -12,20 +12,20 @@ class AnimatedContainerPage2 extends StatefulWidget {
 
 class _AnimatedContainerPage2State extends State<AnimatedContainerPage2> {
 
-  var  _color = Colors.pink;
+  var  _color =  Color(0xffC0B298).withOpacity(0.7);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Container 2",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Animated Container 2",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xffC0B298),
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
+
             Padding(padding: EdgeInsets.only(top: 15.h,left: 4.w,right: 4.w,bottom: 5.h),
               child: Center(
                 child: Column(

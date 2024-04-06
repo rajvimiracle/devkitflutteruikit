@@ -1,41 +1,55 @@
-import 'package:devkitflutteruikit/widget/AspectRatio/AspectRatioPage.dart';
+
 import 'package:devkitflutteruikit/widget/ClipRReactWidget.dart';
 import 'package:devkitflutteruikit/widget/FadeTransitionPage.dart';
 import 'package:devkitflutteruikit/widget/GestureDetectorWidgetPage.dart';
-import 'package:devkitflutteruikit/widget/HeroWidget/HeroWidgetPage.dart';
+
 import 'package:devkitflutteruikit/widget/IgnorePointerWidget.dart';
 import 'package:devkitflutteruikit/widget/InterctiveViewerPage.dart';
 import 'package:devkitflutteruikit/widget/MediaQueryWidget.dart';
-import 'package:devkitflutteruikit/widget/RotationTransition/RotationTransitionPage.dart';
-import 'package:devkitflutteruikit/widget/SafeAreaWidget/SafeAreaWidgetListPage.dart';
+
 import 'package:devkitflutteruikit/widget/widgetlist/AlignWidgetPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/AnimatedAlignPage.dart';
 import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetList.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'AnimatedItem/AnimatedWidgetListPage.dart';
-import 'Button/ButtonsPage.dart';
-import 'CardItem/CardWidgetListPage.dart';
-import 'DataTable/DataTableWidget.dart';
-import 'DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
-import 'Dismissible/DismissibleListPage.dart';
-import 'DrawerItem/DrawerListPage.dart';
-import 'ExpandedeWidget/ExpandedWidgetPage.dart';
-import 'ImageWidget/ImageWidgetPage.dart';
-import 'OpacityWidget/TextOpacityPage.dart';
-import 'ScaleTransition/ScaleTransitionWidget.dart';
-import 'SideTransitionPage/SideTransitionPage.dart';
-import 'SizeTransition/SizeTransitionPage.dart';
-import 'SnackBarWidgetItem/SnackBarListPage.dart';
-import 'TranfromWidget/TransfromWidgetPage.dart';
+
 import 'widgetlist/AbsorbPointerPage.dart';
 import 'widgetlist/AnimatedContiner/AnimatedContainerPage.dart';
+import 'widgetlist/AnimatedItem/AnimatedWidgetListPage.dart';
 import 'widgetlist/AppBar/AppBarList.dart';
+import 'widgetlist/AspectRatio/AspectRatioPage.dart';
+import 'widgetlist/Bottom AppBar/BottomAppBarPage.dart';
+import 'widgetlist/Button/ButtonsPage.dart';
+import 'widgetlist/CardItem/CardWidgetListPage.dart';
+import 'widgetlist/ColorPickerWidget/ColorPickerPage.dart';
 import 'widgetlist/ContinerWidget/ContinerWidgetList.dart';
+import 'widgetlist/CountryCodePickerWidget/CountryCodePickerPage.dart';
+import 'widgetlist/DataTable/DataTableWidget.dart';
+import 'widgetlist/DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
+import 'widgetlist/Dismissible/DismissibleListPage.dart';
 import 'widgetlist/DividerWidget/DividerWidgetList.dart';
+import 'widgetlist/DrawerItem/DrawerListPage.dart';
+import 'widgetlist/ExpandedeWidget/ExpandedWidgetPage.dart';
 import 'widgetlist/FlexibleWidget/FlexibleWidgetList.dart';
+import 'widgetlist/GridView/GridViewPage.dart';
+import 'widgetlist/HeroWidget/HeroWidgetPage.dart';
+import 'widgetlist/ImageWidget/ImageWidgetPage.dart';
+import 'widgetlist/OpacityWidget/TextOpacityPage.dart';
+import 'widgetlist/ProgessBarWidget/ProgressBarsPage.dart';
+import 'widgetlist/RotationTransition/RotationTransitionPage.dart';
+import 'widgetlist/SafeAreaWidget/SafeAreaWidgetListPage.dart';
+import 'widgetlist/ScaleTransition/ScaleTransitionWidget.dart';
+import 'widgetlist/Search Bar/SearchBarPage.dart';
+import 'widgetlist/SideTransitionPage/SideTransitionPage.dart';
+import 'widgetlist/SizeTransition/SizeTransitionPage.dart';
+import 'widgetlist/SnackBarWidgetItem/SnackBarListPage.dart';
+import 'widgetlist/Splash Screen/SplashScreenPage.dart';
+import 'widgetlist/TextField Gallery/TextFieldsPage.dart';
+import 'widgetlist/TextWidget/TextPage.dart';
+import 'widgetlist/TranfromWidget/TransfromWidgetPage.dart';
 import 'widgetlist/WarpWidgetList/WarpWidgetListPage.dart';
+import 'widgetlist/chipwidget/ChipsGalleryPage.dart';
 
 class WidgetPage extends StatefulWidget {
   const WidgetPage({super.key});
@@ -80,7 +94,20 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Scale Transition", subtitle: "Animates the scale of a\ntransformed  widget",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Size Transition", subtitle: "Animates its own size and clips\nand align its child",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "DecoratedBox Transition", subtitle: "Animates the rotation of a widget",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_listview.png", title: "TextFiled Widget ", subtitle: "Text fields allow users to\ntype text into an app",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_process.png", title: "Progress Indicator Widget", subtitle: "Shown to user when\nthere is waiting data",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_textw.png", title: "Text Widget", subtitle: "One of the main widget in flutter ",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_bottomappbar.png", title: "BottomAppBar Widget ", subtitle: " This widget appears across\nthe bottom of the app bar.",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_searchbar.png", title: "SearchBar Widget", subtitle: "This is widget searchbar\ninside your app",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_countrycode.png", title: "CountryCode Picker Widget", subtitle: "A flutter package to select a\ncountry from a list of countries.",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_gridview.png", title: "GridView Widget ", subtitle: "Used to create layout with grid",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_chip.png", title: "Chip Widget", subtitle: "A Widget compact elements that\nrepresent an attribute,text,entity,action",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_colorcode.png", title: "ColorCode Picker Widget", subtitle: "A Widget  a customizable color\npicker for Flutter",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_splashscreen.png", title: "Splash Screen", subtitle: "A Widget is the first screen that\nwe see when we run our application.",),
+
+
 ];
+
 
 class _WidgetPageState extends State<WidgetPage> {
   @override
@@ -215,6 +242,36 @@ class _WidgetPageState extends State<WidgetPage> {
                       break;
                     case 34:
                       Get.to(DecoratedBoxTransitionPage());
+                      break;
+                    case 35:
+                      Get.to(TextFieldsListPage());
+                      break;
+                    case 36:
+                      Get.to(ProgressBarsPage());
+                      break;
+                    case 37:
+                      Get.to(TextPage());
+                      break;
+                    case 38:
+                      Get.to(BottomAppBarPage());
+                      break;
+                    case 39:
+                      Get.to(SearchBarPage());
+                      break;
+                    case 40:
+                      Get.to(CountryCodePickerPage());
+                      break;
+                    case 41:
+                      Get.to(GridViewListPage());
+                      break;
+                    case 42:
+                      Get.to(ChipsGalleryPage());
+                      break;
+                    case 43:
+                      Get.to(ColorPickerPage());
+                      break;
+                    case 44:
+                      Get.to(SplashScreenPage());
                       break;
                   }
                 },

@@ -1,33 +1,27 @@
-import 'package:devkitflutteruikit/widget/Button/ButtonItem/DropdownButtonPage.dart';
-import 'package:devkitflutteruikit/widget/Button/ButtonItem/ElevatedButtonPage.dart';
-import 'package:devkitflutteruikit/widget/Button/ButtonItem/FloatingActionbuttonPage.dart';
-import 'package:devkitflutteruikit/widget/Button/ButtonItem/IconButtonPage.dart';
-import 'package:devkitflutteruikit/widget/Button/ButtonItem/OutlineButtonPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'SplashItem/AnimatedSplashScreenPage.dart';
+import 'SplashItem/GradiantSplashScreen.dart';
+import 'SplashItem/SimpleSplashScreen.dart';
 
-import 'ButtonItem/ElevatedButtonwithbasicproperty.dart';
-import 'ButtonItem/SelectionControl.dart';
 
-class ButtonsPage extends StatefulWidget {
-  const ButtonsPage({super.key});
+
+class SplashScreenPage extends StatefulWidget {
+  const SplashScreenPage({super.key});
 
   @override
-  State<ButtonsPage> createState() => _ButtonsPageState();
+  State<SplashScreenPage> createState() => _SplashScreenPageState();
 }
 
-class _ButtonsPageState extends State<ButtonsPage> {
+List<Widgetdata> widgetdata = [
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar1.png", title: "Simple Splash Screen", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_splashscreen1.png", title: "Animated Splash Screen", ),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_splashscreen2.png", title: "Gradiant Splash Screen", ),
 
-  List<Widgetdata> widgetdata = [
-    Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_button1.png", title: "Button with Basic Property", ),
-    Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_button2.png", title: "Elevated Button", ),
-    Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_button3.png", title: "Outline Button", ),
-    Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_button4.png", title: "FloatingAction Button", ),
-    Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_button5.png", title: "Icon Button", ),
-    Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_button6.png", title: "Dropdown Button", ),
-    Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_button7.png", title: "Selection Control", ),
-  ];
+];
+
+class _SplashScreenPageState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -38,40 +32,31 @@ class _ButtonsPageState extends State<ButtonsPage> {
             icon: Icon(Icons.arrow_back,size: 4.h,),
 
           ),
-          title: Text("Button Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("Splash Screen",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),
         body: Padding(
           padding: EdgeInsets.only(top: 4.h,right: 4.w,left: 4.w,bottom: 2.h),
           child: ListView.separated(
+
             shrinkWrap: true,
             itemCount: widgetdata.length,
             itemBuilder: (context, index) {
               return  InkWell(
                 onTap: () {
                   switch(index){
+
                     case 0:
-                      Get.to(ElevatedButtonwithbasicproperty());
+                      Get.to(SimpleSplashScreenPage());
                       break;
                     case 1:
-                      Get.to(ElevatedButtonPage());
+                      Get.to(AnimatedSplashScreenPage());
                       break;
                     case 2:
-                      Get.to(OutlineButtonPage());
+                      Get.to(GradiantSplashScreenPage());
                       break;
-                    case 3:
-                      Get.to(FloatingActionbuttonPage());
-                      break;
-                    case 4:
-                      Get.to(IconButtonPage());
-                      break;
-                    case 5:
-                      Get.to(DropdownButtonPage());
-                      break;
-                    case 6:
-                      Get.to(SelectionControlPage());
-                      break;
+
                   }
                 },
                 child: Row(
@@ -103,7 +88,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 14.sp),),
+                                Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 15.sp),),
 
                               ],
                             ),
@@ -131,6 +116,10 @@ class _ButtonsPageState extends State<ButtonsPage> {
     );
   }
 }
+
+
+
+
 
 
 class Widgetdata {

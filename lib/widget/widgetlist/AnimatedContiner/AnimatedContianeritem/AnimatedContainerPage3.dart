@@ -19,14 +19,13 @@ class _AnimatedContainerPage3State extends State<AnimatedContainerPage3> {
       appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Align",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        title: Text("Animated Align",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+        backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
 
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImg.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 5.h,left: 4.w,right: 4.w,bottom: 4.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +58,7 @@ class _AnimatedContainerPage3State extends State<AnimatedContainerPage3> {
                           child: Container(
                             height: 10.h,
                             width: 10.h,
-                            color: Colors.pink,
+                            color:Color(0xff9BBEC7).withOpacity(0.8),
                             child: Center(child: Text("Container",style: TextStyle(color: Colors.white),)),
                           ),
                         )
