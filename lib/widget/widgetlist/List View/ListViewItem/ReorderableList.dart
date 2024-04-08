@@ -8,7 +8,7 @@ class ReorderableListPage extends StatelessWidget {
 
    List<ReorderData> reorderList= [
      ReorderData(title: "Map", img: "assets/icons/icons_map.png"),
-     ReorderData(title: "Album", img: "assets/icons/icons_album.png"),
+     ReorderData(title: "Album", img: "assets/icons/icon_album.png"),
      ReorderData(title: "Phone", img: "assets/icons/icons_phone.png"),
      ReorderData(title: "DeskTop MAC", img: "assets/icons/icons_desktop.png"),
      ReorderData(title: "Device Hub", img: "assets/icons/icons_hub.png"),
@@ -50,7 +50,7 @@ class ReorderableListPage extends StatelessWidget {
                       boxShadow: [BoxShadow(color: Theme.of(context).hoverColor,blurRadius: 3.0,blurStyle: BlurStyle.outer)],
                   ),
                   child: ListTile(
-                    leading: Image.asset(reorderList[index].img,fit: BoxFit.cover,height: 5.w,),
+                    leading: Image.asset(reorderList[index].img,fit: BoxFit.cover,height: 5.w,color:  Color(0xffC0B298).withOpacity(0.5),),
                     title:Text( reorderList[index].title),
                   ),
                 ),

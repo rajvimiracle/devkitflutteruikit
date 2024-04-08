@@ -2,25 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import 'TextFieldItem/ColorFilledwithbarderTextField.dart';
-import 'TextFieldItem/TextFieldwithIcon.dart';
-import 'TextFieldItem/TextFiledwithbasicproperty.dart';
+import 'SliverAppbarItem/AnimatedSliverAppBar.dart';
+import 'SliverAppbarItem/SimpleSliverAppBar.dart';
 
 
-class TextFieldsListPage extends StatefulWidget {
-  const TextFieldsListPage({super.key});
+class SliverAppbarListPage extends StatefulWidget {
+  const SliverAppbarListPage({super.key});
 
   @override
-  State<TextFieldsListPage> createState() => _TextFieldsListPageState();
+  State<SliverAppbarListPage> createState() => _SliverAppbarListPageState();
 }
 
 List<Widgetdata> widgetdata = [
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_saf1.png", title: "TextFiled with \nbasic property", ),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_saf2.png", title: "TextField with Icon", ),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_saf1.png", title: "Color-filled with \nbarder TextField", ),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_sa1.png", title: "Simple Sliver App Bar", ),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_sa2.png", title: "Animated Sliver App Bar", ),
+
 ];
 
-class _TextFieldsListPageState extends State<TextFieldsListPage> {
+class _SliverAppbarListPageState extends State<SliverAppbarListPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -30,7 +29,7 @@ class _TextFieldsListPageState extends State<TextFieldsListPage> {
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 3.h,),
           ),
-          title: Text("TextFields Widget",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
+          title: Text("Sliver AppBar Widget",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
           centerTitle: true,
         ),
         body: Padding(
@@ -45,21 +44,18 @@ class _TextFieldsListPageState extends State<TextFieldsListPage> {
                     return  InkWell(
                       onTap: () {
                         switch(index){
-                          case 0:
-                            Get.to(TextFiledwithbasicproperty(),);
-                            break;
-                          case 1:
-                            Get.to(TextFieldwithIcon(),);
-                            break;
-                          case 2:
-                            Get.to(ColorFilledwithbarderTextField(),);
-                            break;
+                            case 0:
+                              Get.to(SimpleSliverAppBar());
+                              break;
+                            case 1:
+                              Get.to(AnimatedSliverAppBar());
+                              break;
                         }
                       },
                       child: Row(
                         children: [
                           Container(
-                            height: 9.h,
+                            height: 10.h,
                             width: 17.w,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(6)),
@@ -69,33 +65,29 @@ class _TextFieldsListPageState extends State<TextFieldsListPage> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 4.w,),
+                          SizedBox(width: 5.w,),
                           Container(
-                            height: 9.h,
+                            height: 11.h,
                             width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.1),
                               borderRadius: BorderRadius.all(Radius.circular(10),),
                             ),
                             child: Padding(
-                              padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 2.5.h,),
+                              padding:  EdgeInsets.only(left: 3.w,right: 2.w,top: 1.h,),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 15.sp),),
+                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 14.sp),),
                                     ],
                                   ),
-                                  Padding(
-                                    padding:  EdgeInsets.only(bottom: 2.h),
-                                    child: CircleAvatar(
-
-                                      radius: 15,
-                                      backgroundColor:  widgetdata[index].color1,
-                                      child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
-                                    ),
+                                  CircleAvatar(
+                                    radius: 15,
+                                    backgroundColor:  widgetdata[index].color1,
+                                    child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
                                   )
                                 ],
                               ),
@@ -127,4 +119,6 @@ class Widgetdata {
     required this.title,
   });
 }
+
+
 

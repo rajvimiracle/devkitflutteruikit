@@ -75,10 +75,9 @@ class _MediaQueryWidgetPageState extends State<MediaQueryWidgetPage> {
                   Text("3.0",style: TextStyle(fontSize: 10.sp),),
                 ],
               ),
-
-
             ],
           ),
+
         ),
           ],
         ),

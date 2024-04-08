@@ -7,7 +7,7 @@ import 'package:sizer/sizer.dart';
 
 class TextPage extends StatelessWidget {
   String title;
-  TextPage({super.key,this.title = 'Text Gallery'});
+  TextPage({super.key,this.title = 'Text Widget'});
 
   @override
   Widget build(BuildContext context) {

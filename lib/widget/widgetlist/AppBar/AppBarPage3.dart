@@ -38,7 +38,7 @@ class _AppBarPage3State extends State<AppBarPage3> {
               Container(
                 height: 8.h,
                 width: double.infinity,
-                color: Color(0xff8A95A5).withOpacity(0.5),
+                color: Color(0xff9BBEC7).withOpacity(0.8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

@@ -21,6 +21,7 @@ import 'widgetlist/AnimatedText/AnimatedTextPage.dart';
 import 'widgetlist/AppBar/AppBarList.dart';
 import 'widgetlist/AspectRatio/AspectRatioPage.dart';
 import 'widgetlist/Bottom AppBar/BottomAppBarPage.dart';
+import 'widgetlist/Bottom Menu/BottomMenuPage.dart';
 import 'widgetlist/Button/ButtonsPage.dart';
 import 'widgetlist/CardItem/CardWidgetListPage.dart';
 import 'widgetlist/ColorPickerWidget/ColorPickerPage.dart';
@@ -36,15 +37,18 @@ import 'widgetlist/FlexibleWidget/FlexibleWidgetList.dart';
 import 'widgetlist/GridView/GridViewPage.dart';
 import 'widgetlist/HeroWidget/HeroWidgetPage.dart';
 import 'widgetlist/ImageWidget/ImageWidgetPage.dart';
+import 'widgetlist/List View/ListViewPage.dart';
 import 'widgetlist/OpacityWidget/TextOpacityPage.dart';
 import 'widgetlist/ProgessBarWidget/ProgressBarsPage.dart';
 import 'widgetlist/RotationTransition/RotationTransitionPage.dart';
 import 'widgetlist/SafeAreaWidget/SafeAreaWidgetListPage.dart';
 import 'widgetlist/ScaleTransition/ScaleTransitionWidget.dart';
 import 'widgetlist/Search Bar/SearchBarPage.dart';
+import 'widgetlist/Search Stepper/StepperListPage.dart';
 import 'widgetlist/Side Menu/SideMenuPage.dart';
 import 'widgetlist/SideTransitionPage/SideTransitionPage.dart';
 import 'widgetlist/SizeTransition/SizeTransitionPage.dart';
+import 'widgetlist/Sliver Appbar/SliverAppbarListPage.dart';
 import 'widgetlist/SnackBarWidgetItem/SnackBarListPage.dart';
 import 'widgetlist/Splash Screen/SplashScreenPage.dart';
 import 'widgetlist/TextField Gallery/TextFieldsPage.dart';
@@ -109,9 +113,9 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_sidemenu.png", title: "Side Menu", subtitle: "The navigation drawer is added\nusing the Drawer widget.",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animatedtext.png", title: "Animated Text", subtitle: "Text animation is the process\nof animating text on a computer",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_list.png", title: "ListView Widget ", subtitle: "ListView is the most commonly\nused scrolling widget.",),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_silveraapp.png", title: "SilverApp Bar Widget", subtitle: " SliverAppBar to add a floating app bar",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_silveraapp.png", title: "SilverApp Bar Widget", subtitle: " SliverAppBar to add a\nfloating app bar",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_stepper.png", title: "Stepper  Widget", subtitle: " stepper widget that displays\nprogress through a sequence of steps",),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_bottommenu.png", title: "Bottom Menu ", subtitle: "A Widget bars allow movement\nbetween primary destinations in an app"),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_bottommenu.png", title: "Bottom Menu ", subtitle: "A Widget bars allow movement\nbetween primary destinations"),
 ];
 
 class _WidgetPageState extends State<WidgetPage> {
@@ -284,6 +288,19 @@ class _WidgetPageState extends State<WidgetPage> {
                     case 46:
                       Get.to(AnimatedTextPage());
                       break;
+                    case 47:
+                      Get.to(ListViewWidgetListPage());
+                      break;
+                    case 48:
+                      Get.to(SliverAppbarListPage());
+                      break;
+                    case 49:
+                      Get.to(StepperListPage());
+                      break;
+                    case 50:
+                      Get.to(BottomMenuListPage());
+                      break;
+
                   }
                 },
                 child: Row(

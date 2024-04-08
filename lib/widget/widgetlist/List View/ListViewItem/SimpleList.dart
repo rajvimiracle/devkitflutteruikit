@@ -8,7 +8,7 @@ class SimpleList extends StatelessWidget {
 
   List<ListData> listviewData = [
      ListData(title: "Map", img: "assets/icons/icons_map.png"),
-     ListData(title: "Album", img: "assets/icons/icons_album.png"),
+     ListData(title: "Album", img: "assets/icons/icon_album.png"),
      ListData(title: "Phone", img: "assets/icons/icons_phone.png"),
      ListData(title: "DeskTop MAC", img: "assets/icons/icons_desktop.png"),
      ListData(title: "Device Hub",img:  "assets/icons/icons_hub.png"),
@@ -41,7 +41,7 @@ class SimpleList extends StatelessWidget {
               shrinkWrap: true ,itemCount:listviewData.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  leading: Image.asset(listviewData[index].img,fit: BoxFit.cover,height: 5.w,),
+                  leading: Image.asset(listviewData[index].img,fit: BoxFit.cover,height: 5.w,color: Color(0xff9888A5).withOpacity(0.5),),
                   title:Text( listviewData[index].title),
                 );
               },),
@@ -54,8 +54,10 @@ class SimpleList extends StatelessWidget {
 class ListData{
   String title;
   String img;
+
   ListData({
     required this.title,
     required this.img,
+
   });
 }

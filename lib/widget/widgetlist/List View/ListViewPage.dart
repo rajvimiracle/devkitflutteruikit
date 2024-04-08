@@ -1,27 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'BorderRadiusCard.dart';
-import 'ElevationCard.dart';
-import 'ShadowColorCard.dart';
-import 'StandartCard.dart';
 
-class CardListPage extends StatefulWidget {
-  const CardListPage({super.key});
+import 'ListViewItem/BouncyList.dart';
+import 'ListViewItem/ExpandableList.dart';
+import 'ListViewItem/ReorderableList.dart';
+import 'ListViewItem/SelectionList.dart';
+import 'ListViewItem/SimpleList.dart';
+import 'ListViewItem/SlidableList.dart';
+import 'ListViewItem/SwappableList.dart';
+
+
+
+
+class ListViewWidgetListPage extends StatefulWidget {
+  const ListViewWidgetListPage({super.key});
 
   @override
-  State<CardListPage> createState() => _CardListPageState();
+  State<ListViewWidgetListPage> createState() => _ListViewWidgetListPageState();
 }
 
 List<Widgetdata> widgetdata = [
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_c1.png", title: "Standard Card", ),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_c2.png", title: "Border Radius Card", ),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_c3.png", title: "Elevation Card", ),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_c4.png", title: "Shadow Color Card", ),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_list1.png", title: "Simple List"),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_list2.png", title: "Bouncy List"),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_list3.png", title: "Slidable List"),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_list4.png", title: "Swappable List"),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_list5.png", title: "Reorderable List"),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_list6.png", title: "Expandable List"),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_list7.png", title: "Selection List"),
 
 ];
 
-class _CardListPageState extends State<CardListPage> {
+class _ListViewWidgetListPageState extends State<ListViewWidgetListPage> {
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -29,9 +41,9 @@ class _CardListPageState extends State<CardListPage> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () => Get.back(),
-            icon: Icon(Icons.arrow_back,size: 5.h,),
+            icon: Icon(Icons.arrow_back,size: 3.h,),
           ),
-          title: Text("Animated Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
+          title: Text("ListView Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
           centerTitle: true,
         ),
         body: Padding(
@@ -49,24 +61,33 @@ class _CardListPageState extends State<CardListPage> {
                         onTap: () {
                           switch(index){
                             case 0:
-                              Get.to(StandartCardPage(),);
+                              Get.to(SimpleList());
                               break;
-                           case 1:
-                              Get.to(BorderRadiusCardPage(),);
+                            case 1:
+                              Get.to(BouncyList());
                               break;
-                          case 2:
-                            Get.to(ElevationCardPage(),);
-                            break;
-                          case 3:
-                            Get.to(ShadowColorCardPage(),);
-                            break;
+                            case 2:
+                              Get.to(SlidableList());
+                              break;
+                            case 3:
+                              Get.to(SwappableList());
+                              break;
+                            case 4:
+                              Get.to(ReorderableListPage());
+                              break;
+                            case 5:
+                              Get.to(ExpandableList());
+                              break;
+                            case 6:
+                              Get.to(SelectionList());
+                              break;
                           }
                         },
                         child: Row(
                           children: [
                             Container(
                               height: 9.h,
-                              width: 18.w,
+                              width: 17.w,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(6)),
                                 color: widgetdata[index].color1,

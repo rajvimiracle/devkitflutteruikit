@@ -46,7 +46,7 @@ class _AppBarPage2State extends State<AppBarPage2> {
                           padding:  EdgeInsets.only(left: 20.w),
                           child: Row(
                             children: [
-                              Image.asset("assets/icons/icon_curlybracket.png"),
+                              Image.asset("assets/icons/icon_curelbreacket.png"),
                               SizedBox(width: 3.w,),
                               Text("Miracle Kit",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15.sp,color: Colors.black,letterSpacing: 1),),
                             ],

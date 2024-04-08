@@ -23,8 +23,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
     NavigationData(img: 'assets/images/img_foodImage4.png',icon:"assets/icons/icon_sidemenuIcon10.png",title:"South Indian", text: '81 5TH AVENUE, YORK',conColor: Color(0xffA85400)),
   ];
 
-  List menuItem = [ "THE PADDOCK", "HE HERO", "THELP US GROW", "SETTINGS",];
-
+  List menuItem = [ "THE PADDOCK","HE HERO","THELP US GROW","SETTINGS",];
   double xOffset = 0;
   double yOffset = 0;
   double scaleFactor = 1;
@@ -94,7 +93,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
       transform: Matrix4.translationValues(xOffset, yOffset, 0)..scale(scaleFactor),
       duration: Duration(milliseconds: 250),color: Theme.of(context).primaryColorDark,
       child: Scaffold(
-        backgroundColor: Theme.of(context).bottomAppBarColor,
+        backgroundColor: Color(0xffC0B298),
         appBar: AppBar(centerTitle: true,
           leading:isDrawerOpen
               ? IconButton(
@@ -117,7 +116,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
                   });
                 },
                 icon: Icon(Icons.menu,color: Theme.of(context).primaryColorDark,)),
-          backgroundColor: Theme.of(context).secondaryHeaderColor,
+          backgroundColor: Color(0xffC0B298),
           title: Text(selectIndex == 0
               ? widget.title : selectIndex == 1
               ? 'OTHER SCREEN' : selectIndex == 2
@@ -139,7 +138,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
            )
            : selectIndex == 1 ? SafeArea(
          child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
+           child: Container(height:70.w,color: Color(0xffC0B298),
              child: Column(mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
@@ -151,7 +150,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
          ),
        )  : selectIndex == 2 ? SafeArea(
          child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
+           child: Container(height:70.w,color: Color(0xffC0B298),
              child: Column(mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
@@ -164,7 +163,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
        )
            : selectIndex  == 3 ? SafeArea(
          child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
+           child: Container(height:70.w,color: Color(0xffC0B298),
              child: Column(mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),

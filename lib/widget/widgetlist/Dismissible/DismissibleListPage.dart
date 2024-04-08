@@ -53,7 +53,7 @@ class _DismissibleListPageState extends State<DismissibleListPage> {
                       child: Row(
                         children: [
                           Container(
-                            height: 10.h,
+                            height: 9.h,
                             width: 17.w,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(6)),
@@ -63,16 +63,16 @@ class _DismissibleListPageState extends State<DismissibleListPage> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 5.w,),
+                          SizedBox(width: 4.w,),
                           Container(
-                            height: 11.h,
+                            height: 9.h,
                             width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.1),
                               borderRadius: BorderRadius.all(Radius.circular(10),),
                             ),
                             child: Padding(
-                              padding:  EdgeInsets.only(left: 3.w,right: 2.w,top: 1.h,),
+                              padding:  EdgeInsets.only(left: 3.w,right: 2.w,top: 2.h,),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
@@ -82,10 +82,13 @@ class _DismissibleListPageState extends State<DismissibleListPage> {
                                       Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 14.sp),),
                                     ],
                                   ),
-                                  CircleAvatar(
-                                    radius: 15,
-                                    backgroundColor:  widgetdata[index].color1,
-                                    child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                  Padding(
+                                    padding:  EdgeInsets.only(bottom: 2.h),
+                                    child: CircleAvatar(
+                                      radius: 15,
+                                      backgroundColor:  widgetdata[index].color1,
+                                      child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                    ),
                                   )
                                 ],
                               ),
