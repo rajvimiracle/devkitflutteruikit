@@ -17,6 +17,7 @@ import 'package:sizer/sizer.dart';
 import 'widgetlist/AbsorbPointerPage.dart';
 import 'widgetlist/AnimatedContiner/AnimatedContainerPage.dart';
 import 'widgetlist/AnimatedItem/AnimatedWidgetListPage.dart';
+import 'widgetlist/AnimatedText/AnimatedTextPage.dart';
 import 'widgetlist/AppBar/AppBarList.dart';
 import 'widgetlist/AspectRatio/AspectRatioPage.dart';
 import 'widgetlist/Bottom AppBar/BottomAppBarPage.dart';
@@ -41,6 +42,7 @@ import 'widgetlist/RotationTransition/RotationTransitionPage.dart';
 import 'widgetlist/SafeAreaWidget/SafeAreaWidgetListPage.dart';
 import 'widgetlist/ScaleTransition/ScaleTransitionWidget.dart';
 import 'widgetlist/Search Bar/SearchBarPage.dart';
+import 'widgetlist/Side Menu/SideMenuPage.dart';
 import 'widgetlist/SideTransitionPage/SideTransitionPage.dart';
 import 'widgetlist/SizeTransition/SizeTransitionPage.dart';
 import 'widgetlist/SnackBarWidgetItem/SnackBarListPage.dart';
@@ -104,10 +106,13 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_chip.png", title: "Chip Widget", subtitle: "A Widget compact elements that\nrepresent an attribute,text,entity,action",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_colorcode.png", title: "ColorCode Picker Widget", subtitle: "A Widget  a customizable color\npicker for Flutter",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_splashscreen.png", title: "Splash Screen", subtitle: "A Widget is the first screen that\nwe see when we run our application.",),
-
-
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_sidemenu.png", title: "Side Menu", subtitle: "The navigation drawer is added\nusing the Drawer widget.",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animatedtext.png", title: "Animated Text", subtitle: "Text animation is the process\nof animating text on a computer",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_list.png", title: "ListView Widget ", subtitle: "ListView is the most commonly\nused scrolling widget.",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_silveraapp.png", title: "SilverApp Bar Widget", subtitle: " SliverAppBar to add a floating app bar",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_stepper.png", title: "Stepper  Widget", subtitle: " stepper widget that displays\nprogress through a sequence of steps",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_bottommenu.png", title: "Bottom Menu ", subtitle: "A Widget bars allow movement\nbetween primary destinations in an app"),
 ];
-
 
 class _WidgetPageState extends State<WidgetPage> {
   @override
@@ -272,6 +277,12 @@ class _WidgetPageState extends State<WidgetPage> {
                       break;
                     case 44:
                       Get.to(SplashScreenPage());
+                      break;
+                    case 45:
+                      Get.to(SideMenuPage());
+                      break;
+                    case 46:
+                      Get.to(AnimatedTextPage());
                       break;
                   }
                 },

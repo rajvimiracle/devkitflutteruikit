@@ -40,7 +40,6 @@ class _ProgressBarsPageState extends State<ProgressBarsPage> with SingleTickerPr
         title: Text(widget.title,style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xff9888A5),
       ),
-
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
 
